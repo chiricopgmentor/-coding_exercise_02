@@ -7,6 +7,10 @@ body {
   font-family: "Noto Serif JP", serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .l-header, .l-section, .l-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,7 +83,6 @@ body {
   font-style: italic;
 }
 .menu_wrapper a {
-  text-decoration: none;
   color: #FFFFFF;
 }
 
@@ -179,14 +182,17 @@ body {
   color: rgba(23, 23, 23, 0.05);
 }
 
-.content_list {
+.card_list, .bl_3colBannerUnit {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.content_item {
+.card_list li, .bl_3colBannerUnit li {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -204,12 +210,41 @@ body {
   width: 235px;
   height: 60px;
   font-size: 1.6rem;
-  text-decoration: none;
   color: #171717;
   background-color: #F7D43F;
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
+}
+
+.bl_3colBannerUnit {
+  width: 100%;
+}
+
+.bl_3colBannerUnit_item {
+  width: 33%;
+  height: 320px;
+  position: relative;
+}
+
+.bl_banner_text {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 320px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bl_banner_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .white {
