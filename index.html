@@ -1,77 +1,154 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/sanitize.css"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital,wght@0,700;1,700&display=swap"> 
-  <link rel="stylesheet" href="./css/style.css">
-  <title>クリ★スタ　コーディング課題（中級編）</title>
-</head>
-<body>
-<header>
-  Cresta Design
-  Concept
-  Service
-  Works
-  Contact
-</header>
-<main>
-  <article>
-    <!-- first_view -->
-    <section id="first_view">
-      Design for Smile.
-      快適なオフィスをデザインする
-    </section>
-    <!-- //first_view -->
-    <!-- concept -->
-    <section id="concept">
-      CONCEPT
-      “働きたくなる空間”をデザインすることで
-      人々を幸せにする。
-      私たちは、オフィスに特化した空間デザイン専門としております。
-      その理由は、「働きたくなる空間で仕事ができれば
-      多くの人を幸せにできるのではないか」と考えるためです。
-      そんな想いの株式会社Cresta Designだからこそできる
-      空間デザインを提供させていただきます。
-      Our Concept
-    </section>
-    <!-- //concept -->
-    <!-- works -->
-    <section id="works">
-      Works
-      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-      新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
-      View more
-      Our Works
-    </section>
-    <!-- //works -->
-    <!-- service -->
-    <section id="service">
-      Service
-      Hearing
-      Planning
-      Direction
-      Our Service
-    </section>
-    <!-- //service -->
-    <!-- contact -->
-    <section id="contact">
-      Contact
-      お気軽にご相談ください。
-      Contact
-      Contact us
-    </section>
-    <!-- //contact -->
-  </article>
-</main>
-<footer>
-  ©︎cresta.design all rights reserved
-</footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700&family=Noto+Serif:ital,wght@0,700;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>クリ★スタ　コーディング課題（中級編）</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="section_container">
+        <div class="menu_wrapper">
+          <h1 class="site_title">
+            <a href="./index.html"> Cresta Design </a>
+          </h1>
+          <nav>
+            <ul class="header_menu">
+              <li class="header_menu__item">
+                <a class="in_site_link" href="#concept">Concept</a>
+              </li>
+              <li class="header_menu__item">
+                <a class="in_site_link" href="#works">Works</a>
+              </li>
+              <li class="header_menu__item">
+                <a class="in_site_link" href="#service">Service</a>
+              </li>
+              <li class="header_menu__item">
+                <a class="in_site_link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <ul class="fv_bgi_slider">
+        <li class="fv_bgi_slider__item">
+          <img class="fv_bgi_slider__img" src="./img/fv-bgi_01@2x.jpg" />
+        </li>
+        <li class="fv_bgi_slider__item">
+          <img class="fv_bgi_slider__img" src="./img/fv-bgi_02@2x.jpg" />
+        </li>
+        <li class="fv_bgi_slider__item">
+          <img class="fv_bgi_slider__img" src="./img/fv-bgi_03@2x.jpg" />
+        </li>
+      </ul>
+    </header>
+    <main>
+      <article>
+        <!-- first_view -->
+        <section class="l-section" id="first_view">
+          <div class="section_container">
+            <p class="main_copy">Design for Smile.</p>
+            <p class="sub_copy">快適なオフィスをデザインする</p>
+          </div>
+        </section>
+        <!-- //first_view -->
+        <!-- concept -->
+        <section class="l-section" id="concept">
+          <div class="section_container">
+            <h2 class="section_title">CONCEPT</h2>
+            <p class="section_lead">
+              “働きたくなる空間”をデザインすることで<br />人々を幸せにする。
+            </p>
+            <div class="media">
+              <p class="media__text">
+                私たちは、オフィスに特化した空間デザイン専門としております。
+                その理由は、「働きたくなる空間で仕事ができれば
+                多くの人を幸せにできるのではないか」と考えるためです。
+                そんな想いの株式会社Cresta Designだからこそできる
+                空間デザインを提供させていただきます。
+              </p>
+              <img src="./img/concept-image@2x.jpg" alt="" class="media__img" />
+            </div>
+            <p class="bg_text right">Our Concept</p>
+          </div>
+        </section>
+        <!-- //concept -->
+        <!-- works -->
+        <section class="l-section" id="works">
+          <div class="section_container">
+            <h2 class="section_title white right">Works</h2>
+            <ul class="content_list">
+              <li class="content_item">
+                <div class="div card">
+                  <img src="./img/card-img01@2x.jpg" alt="" class="card__img" />
+                  <p class="card__text">
+                    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                  </p>
+                </div>
+              </li>
+              <li class="content_item">
+                <div class="div card">
+                  <img src="./img/card-img02@2x.jpg" alt="" class="card__img" />
+                  <p class="card__text">
+                    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                  </p>
+                </div>
+              </li>
+              <li class="content_item">
+                <div class="div card">
+                  <img src="./img/card-img03@2x.jpg" alt="" class="card__img" />
+                  <p class="card__text">
+                    新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <a href="#!" class="btn">View more</a>
+            <p class="bg_text white">Our Works</p>
+          </div>
+        </section>
+        <!-- //works -->
+        <!-- service -->
+        <section class="l-section" id="service">
+          <div class="section_container">
+            <h2 class="section_title">Service</h2>
+            Hearing Planning Direction
+            <p class="bg_text right">Our Service</p>
+          </div>
+        </section>
+        <!-- //service -->
+        <!-- contact -->
+        <section class="l-section" id="contact">
+          <div class="section_container">
+            <h2 class="section_title white right">Contact</h2>
+            お気軽にご相談ください。
+            <p class="bg_text white">Contact us</p>
+          </div>
+        </section>
+        <!-- //contact -->
+      </article>
+    </main>
+    <footer class="l-footer">
+      <div class="section_container">©︎cresta.design all rights reserved</div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
