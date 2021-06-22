@@ -240,6 +240,10 @@ a {
   font-style: italic;
 }
 
+.bl_banner_text:hover {
+  background: rgba(40, 47, 53, 0.8);
+}
+
 .bl_banner_img {
   width: 100%;
   height: 100%;
