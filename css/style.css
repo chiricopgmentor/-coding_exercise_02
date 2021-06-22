@@ -247,6 +247,13 @@ a {
      object-fit: cover;
 }
 
+.bl_contact_msg {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .white {
   color: #FFFFFF;
 }
