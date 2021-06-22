@@ -1,4 +1,4 @@
-$('.fv_bgi_slider').slick({
+$('.carousel').slick({
   autoplay: true,
   arrows: false,
 });
