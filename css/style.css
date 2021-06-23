@@ -223,6 +223,10 @@ a {
   padding: 0;
 }
 
+.card_list {
+  margin-bottom: 80px;
+}
+
 .card__img {
   width: 100%;
 }
