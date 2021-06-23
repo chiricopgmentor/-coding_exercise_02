@@ -281,6 +281,10 @@ a {
   color: #FFFFFF;
 }
 
+.bgWhite {
+  color: rgba(255, 255, 255, 0.05);
+}
+
 .right {
   text-align: right;
 }/*# sourceMappingURL=style.css.map */
