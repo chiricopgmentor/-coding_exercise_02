@@ -51,6 +51,8 @@ a {
   justify-content: flex-start;
   align-items: flex-end;
 }
+// TODO ly_contentsWrapperを中央寄せ
+// TODO 画面幅1000px以下の時の横幅を最適化
 .ly_contentsWrapper {
   width: 100%;
   max-width: calc(1000px + 15px * 2);
