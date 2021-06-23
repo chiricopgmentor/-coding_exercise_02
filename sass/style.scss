@@ -40,6 +40,9 @@ a {
 }
 #first_view .section_container {
   height: calc(100vh - 50px);
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .ly_contentsWrapper {
   width: 100%;
@@ -90,10 +93,12 @@ a {
 .main_copy {
   font-size: 7rem;
   color: #FFFFFF;
+  margin: 0 0 25px;
 }
 .sub_copy {
   font-size: 4rem;
   color: #FFFFFF;
+  margin: 0 0 170px;
 }
 .carousel {
   position: absolute;
