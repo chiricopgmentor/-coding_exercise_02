@@ -45,6 +45,13 @@ a {
   padding: 0 15px;
 }
 
+.section_container--sticky_menu {
+  position: fixed;
+  background: rgba(40, 47, 53, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .l-header .section_container {
   height: 50px;
 }

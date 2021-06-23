@@ -30,6 +30,11 @@ a {
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
 }
+.section_container--sticky_menu {
+  position: fixed;
+  background: rgb(40 47 53 / 80%);
+  transition: .3s;
+}
 .l-header .section_container {
   height: 50px;
 }
@@ -57,6 +62,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  // height: 96px; TODO ヘッダーの高さ調整
   font-style: italic;
   a {
     color: #FFFFFF;
