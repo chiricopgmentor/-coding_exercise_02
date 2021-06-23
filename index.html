@@ -19,47 +19,47 @@
     <title>クリ★スタ　コーディング課題（中級編）</title>
   </head>
   <body>
-    <header class="l-header">
-      <div class="ly_headerContainer">
-        <div class="menu_wrapper">
-          <h1 class="site_title">
+    <header class="ly_header">
+      <div class="bl_headerMenu_wrapper">
+        <div class="bl_headerMenu">
+          <h1 class="el_siteTitle">
             <a href="./index.html"> Cresta Design </a>
           </h1>
           <nav>
-            <ul class="header_menu">
-              <li class="header_menu__item">
-                <a class="in_site_link" href="#concept">Concept</a>
+            <ul class="bl_inSiteLinkList">
+              <li class="bl_inSiteLinkList_item">
+                <a class="bl_inSiteLink" href="#concept">Concept</a>
               </li>
-              <li class="header_menu__item">
-                <a class="in_site_link" href="#works">Works</a>
+              <li class="bl_inSiteLinkList_item">
+                <a class="bl_inSiteLink" href="#works">Works</a>
               </li>
-              <li class="header_menu__item">
-                <a class="in_site_link" href="#service">Service</a>
+              <li class="bl_inSiteLinkList_item">
+                <a class="bl_inSiteLink" href="#service">Service</a>
               </li>
-              <li class="header_menu__item">
-                <a class="in_site_link" href="#contact">Contact</a>
+              <li class="bl_inSiteLinkList_item">
+                <a class="bl_inSiteLink" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      <ul class="carousel">
-        <li class="carousel__item">
-          <img class="carousel__img" src="./img/fv-bgi_01@2x.jpg" />
+      <ul class="bl_bgiCarousel">
+        <li>
+          <img class="bl_bgiCarousel_img" src="./img/fv-bgi_01@2x.jpg" />
         </li>
-        <li class="carousel__item">
-          <img class="carousel__img" src="./img/fv-bgi_02@2x.jpg" />
+        <li>
+          <img class="bl_bgiCarousel_img" src="./img/fv-bgi_02@2x.jpg" />
         </li>
-        <li class="carousel__item">
-          <img class="carousel__img" src="./img/fv-bgi_03@2x.jpg" />
+        <li>
+          <img class="bl_bgiCarousel_img" src="./img/fv-bgi_03@2x.jpg" />
         </li>
       </ul>
     </header>
     <main>
       <article>
         <!-- first_view -->
-        <section class="l-section" id="first_view">
-          <div class="section_container">
+        <section class="ly_section" id="first_view">
+          <div class="ly_section_inner">
             <div class="bl_copyWrapper">
               <p class="main_copy">Design for Smile.</p>
               <p class="sub_copy">〜快適なオフィスをデザインする〜</p>
@@ -68,32 +68,36 @@
         </section>
         <!-- //first_view -->
         <!-- concept -->
-        <section class="l-section" id="concept">
-          <div class="section_container">
+        <section class="ly_section" id="concept">
+          <div class="ly_section_inner">
             <div class="ly_contentsWrapper">
               <h2 class="section_title">CONCEPT</h2>
               <p class="section_lead">
                 “働きたくなる空間”をデザインすることで<br />人々を幸せにする。
               </p>
-              <div class="media">
-                <p class="media__text">
+              <div class="bl_media">
+                <p class="bl_media_text">
                   私たちは、オフィスに特化した空間デザイン専門としております。
                   その理由は、「働きたくなる空間で仕事ができれば
                   多くの人を幸せにできるのではないか」と考えるためです。
                   そんな想いの株式会社Cresta Designだからこそできる
                   空間デザインを提供させていただきます。
                 </p>
-                <img src="./img/concept-image@2x.jpg" alt="" class="media__img" />
+                <img
+                  src="./img/concept-image@2x.jpg"
+                  alt=""
+                  class="bl_media_img"
+                />
               </div>
             </div>
-            <p class="bg_text right">Our Concept</p>
+            <p class="bg_text hp_right">Our Concept</p>
           </div>
         </section>
         <!-- //concept -->
         <!-- works -->
-        <section class="l-section" id="works">
-          <div class="section_container">
-            <h2 class="section_title white right">Works</h2>
+        <section class="ly_section" id="works">
+          <div class="ly_section_inner">
+            <h2 class="section_title hp_white hp_right">Works</h2>
             <ul class="card_list">
               <li class="card">
                 <img
@@ -129,13 +133,13 @@
             <div class="bl_btnWrapper">
               <a href="#!" class="bl_btn">View more</a>
             </div>
-            <p class="bg_text bgWhite">Our Works</p>
+            <p class="bg_text hp_bgWhite">Our Works</p>
           </div>
         </section>
         <!-- //works -->
         <!-- service -->
-        <section class="l-section" id="service">
-          <div class="section_container">
+        <section class="ly_section" id="service">
+          <div class="ly_section_inner">
             <h2 class="section_title">Service</h2>
             <ul class="bl_3colBannerUnit">
               <li class="bl_3colBannerUnit_item bl_banner">
@@ -163,26 +167,26 @@
                 />
               </li>
             </ul>
-            <p class="bg_text right">Our Service</p>
+            <p class="bg_text hp_right">Our Service</p>
           </div>
         </section>
         <!-- //service -->
         <!-- contact -->
-        <section class="l-section" id="contact">
-          <div class="section_container">
-            <h2 class="section_title white right">Contact</h2>
+        <section class="ly_section" id="contact">
+          <div class="ly_section_inner">
+            <h2 class="section_title hp_white hp_right">Contact</h2>
             <p class="bl_contact_msg">お気軽にご相談ください。</p>
             <div class="bl_btnWrapper">
               <a href="./contact.html" class="bl_btn"> Contact </a>
             </div>
-            <p class="bg_text bgWhite">Contact us</p>
+            <p class="bg_text hp_bgWhite">Contact us</p>
           </div>
         </section>
         <!-- //contact -->
       </article>
     </main>
-    <footer class="l-footer">
-      <div class="section_container">©︎cresta.design all rights reserved</div>
+    <footer class="ly_footer">
+      <div class="ly_footerInner">©︎cresta.design all rights reserved</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
