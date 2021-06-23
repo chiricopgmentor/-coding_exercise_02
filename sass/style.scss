@@ -41,6 +41,11 @@ a {
 #first_view .section_container {
   height: calc(100vh - 50px);
 }
+.ly_contentsWrapper {
+  width: 100%;
+  max-width: calc(1000px + 15px * 2);
+  padding: 0 15px;
+}
 .has_bgi {
   background-size: cover;
   background-position: center;
@@ -130,6 +135,15 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.media__text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: .5rem;
+  width: 44%;
+}
+.media__img {
+  width: 44%;
 }
 .bg_text {
   font-size: 9rem;

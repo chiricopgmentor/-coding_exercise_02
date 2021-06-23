@@ -60,6 +60,12 @@ a {
   height: calc(100vh - 50px);
 }
 
+.ly_contentsWrapper {
+  width: 100%;
+  max-width: calc(1000px + 15px * 2);
+  padding: 0 15px;
+}
+
 .has_bgi, #contact, #works {
   background-size: cover;
   background-position: center;
@@ -182,6 +188,17 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.media__text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5rem;
+  width: 44%;
+}
+
+.media__img {
+  width: 44%;
 }
 
 .bg_text {
