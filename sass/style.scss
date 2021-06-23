@@ -154,7 +154,11 @@ text-align: center;
   margin: 0;
   padding: 8% 8%;
 }
-.btn {
+.bl_btnWrapper {
+  display: flex;
+  justify-content: center;
+}
+.bl_btn {
   display: block;
   width: 235px;
   height: 60px;

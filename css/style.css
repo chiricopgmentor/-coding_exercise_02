@@ -213,7 +213,18 @@ a {
   padding: 8% 8%;
 }
 
-.btn {
+.bl_btnWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bl_btn {
   display: block;
   width: 235px;
   height: 60px;
