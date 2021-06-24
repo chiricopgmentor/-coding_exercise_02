@@ -166,24 +166,28 @@ margin: 0 0 60px;
   color: rgb(23 23 23 / 5%);
   margin: 70px 0;
 }
-.card_list, .bl_3colBannerUnit{
+.bl_3colCardUnit, .bl_3colBannerUnit{
   display: flex;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   li {
     list-style: none;
-    margin: 0;
-    padding: 0;
   }
 }
-.card_list {
+.bl_3colCardUnit {
   margin-bottom: 80px;
 }
-.card__img {
+.bl_3colCardUnit_item {
+  margin-right: 20px;
+}
+.bl_3colCardUnit_item:last-of-type {
+  margin-right: 0;
+}
+.bl_card_img {
   width: 100%;
 }
-.card__text {
+.bl_card_text {
   font-size: 1.6rem;
   background-color: #FFFFFF;
   margin: 0;
