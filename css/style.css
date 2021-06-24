@@ -62,10 +62,6 @@ a {
           align-items: flex-end;
 }
 
-#service.ly_section_inner {
-  overflow: hidden;
-}
-
 .ly_contentsWrapper {
   width: 100%;
   max-width: 1000px;
@@ -288,8 +284,7 @@ a {
 }
 
 .bl_3colBannerUnit {
-  width: calc(100vw + 15px);
-  margin: 0 calc(50% - 50vw);
+  width: 100%;
 }
 
 .bl_3colBannerUnit_item {
