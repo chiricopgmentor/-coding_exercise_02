@@ -46,7 +46,7 @@ a {
 }
 
 #first_view.ly_section .ly_section_inner {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 96px);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
