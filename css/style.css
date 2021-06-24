@@ -68,8 +68,7 @@ a {
 
 .ly_contentsWrapper {
   width: 100%;
-  max-width: calc(1000px + 15px * 2);
-  padding: 0 15px;
+  max-width: 1000px;
 }
 
 .has_bgi, #contact, #works {
