@@ -30,9 +30,6 @@ a {
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
 }
-.ly_header .ly_section_inner {
-  height: 50px;
-}
 #first_view .ly_section_inner {
   height: calc(100vh - 50px);
   flex-direction: row;

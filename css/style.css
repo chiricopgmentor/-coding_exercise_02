@@ -45,10 +45,6 @@ a {
   padding: 0 15px;
 }
 
-.ly_header .ly_section_inner {
-  height: 50px;
-}
-
 #first_view .ly_section_inner {
   height: calc(100vh - 50px);
   -webkit-box-orient: horizontal;
