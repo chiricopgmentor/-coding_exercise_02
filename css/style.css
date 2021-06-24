@@ -45,7 +45,7 @@ a {
   padding: 0 15px;
 }
 
-#first_view .ly_section_inner {
+#first_view.ly_section .ly_section_inner {
   height: calc(100vh - 50px);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -65,6 +65,8 @@ a {
 .ly_contentsWrapper {
   width: 100%;
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .has_bgi, #contact, #works {
