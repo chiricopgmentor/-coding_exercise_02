@@ -134,14 +134,17 @@ a {
   font-weight: bold;
   font-style: italic;
   margin: 100px 0 80px;
+  position: relative;
 }
 .el_sectionTitle::after {
   content: "";
   display: inline-block;
   border: 2px solid;
   width: 200px;
-  vertical-align:super;
-  // TODO 線を右にずらす
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(1em);
 }
 .section_lead {
 font-size: 3rem;
