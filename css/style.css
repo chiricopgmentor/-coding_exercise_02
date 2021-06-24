@@ -194,14 +194,14 @@ a {
      object-fit: cover;
 }
 
-.section_title {
+.el_sectionTitle {
   font-size: 6rem;
   font-weight: bold;
   font-style: italic;
   margin: 100px 0 80px;
 }
 
-.section_title::after {
+.el_sectionTitle::after {
   content: "";
   display: inline-block;
   border: 2px solid;
