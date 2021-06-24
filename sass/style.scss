@@ -134,17 +134,20 @@ a {
   font-weight: bold;
   font-style: italic;
   margin: 100px 0 80px;
-  position: relative;
+  // position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 .el_sectionTitle::after {
   content: "";
   display: inline-block;
   border: 2px solid;
   width: 200px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transform: translateX(1em);
+  margin-left: 1em;
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // transform: translateX(1em);
 }
 .section_lead {
 font-size: 3rem;
@@ -264,5 +267,5 @@ margin: 0 0 60px;
   color: rgb(255 255 255 / 5%);
 }
 .hp_right {
-  text-align: right;
+  margin-left: auto;
 }
