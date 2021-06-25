@@ -27,7 +27,7 @@ a {
   transition: 0.3s;
 }
 
-.ly_section_inner {
+.ly_pageWrapper__outer {
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
@@ -35,12 +35,12 @@ a {
   margin-right: auto;
 }
 
-#first_view > .ly_section_inner {
+#first_view > .ly_pageWrapper__outer {
   height: calc(100vh - 96px);
   position: relative;
 }
 
-.ly_contentsWrapper {
+.ly_pageWrapper__inner {
   width: 100%;
   max-width: 1000px;
   margin-left: auto;
