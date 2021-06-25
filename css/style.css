@@ -28,39 +28,16 @@ a {
 }
 
 .ly_section_inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#first_view.ly_section .ly_section_inner {
+#first_view > .ly_section_inner {
   height: calc(100vh - 96px);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  position: relative;
 }
 
 .ly_contentsWrapper {
@@ -162,16 +139,21 @@ a {
      object-fit: cover;
 }
 
-.el_mainCopy {
-  font-size: 7rem;
-  color: #FFFFFF;
-  margin: 0 0 25px;
+.bl_copy {
+  position: absolute;
+  bottom: 22.87%;
 }
 
-.el_subCopy {
+.bl_copy_main {
+  font-size: 7rem;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.bl_copy_sub {
   font-size: 4rem;
   color: #FFFFFF;
-  margin: 0 0 170px;
+  margin: 0;
 }
 
 .el_sectionTitle {
@@ -348,6 +330,10 @@ a {
 .el_creditTxt {
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+.hp_mb25 {
+  margin-bottom: 25px;
 }
 
 .hp_white {

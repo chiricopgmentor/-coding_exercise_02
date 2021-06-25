@@ -37,20 +37,25 @@ a {
   transition: .3s;
 }
 // header end
+// first_view start
 .ly_section_inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-#first_view.ly_section .ly_section_inner {
-  height: calc(100vh - 96px);
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-end;
+#first_view > .ly_section_inner {
+  height: calc(100vh - 96px); // 画面高さ - ヘッダー高さ
+  position: relative;
+  // flex-direction: row;
+  // justify-content: flex-start;
+  // align-items: flex-end;
 }
+// first_view end
 .ly_contentsWrapper {
   width: 100%;
   max-width: 1000px;
@@ -125,17 +130,22 @@ a {
   object-fit: cover;
 }
 // header end
-.el_mainCopy {
+// first_view start
+.bl_copy {
+  position: absolute;
+  bottom: 22.87%; // TODO fvの高さに合わせて割合調整
+}
+.bl_copy_main {
   font-size: 7rem;
   color: #FFFFFF;
-  margin: 0 0 25px;
+  margin: 0;
 }
-.el_subCopy {
+.bl_copy_sub {
   font-size: 4rem;
   color: #FFFFFF;
-  margin: 0 0 170px;
+  margin: 0;
 }
-
+// first_view end
 .el_sectionTitle {
   font-size: 6rem;
   font-weight: bold;
@@ -264,6 +274,9 @@ margin: 0 0 60px;
 // ================================================================
 // helper
 // ================================================================
+.hp_mb25 {
+  margin-bottom: 25px;
+}
 .hp_white {
   color: #FFFFFF;
 }
