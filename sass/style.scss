@@ -59,6 +59,7 @@ a {
 .ly_pageWrapper__inner {
   width: 100%;
   max-width: 1000px;
+  // ly_pageWrapper__outerがあるためinnerはpadding不要
   margin-left: auto;
   margin-right: auto;
 }
