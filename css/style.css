@@ -47,17 +47,16 @@ a {
   margin-right: auto;
 }
 
-.has_bgi, #contact, #works {
+.ly_section#works {
+  background-image: url(../img/works-bgi@2x.jpg);
   background-size: cover;
   background-position: center;
 }
 
-#works {
-  background-image: url(../img/works-bgi@2x.jpg);
-}
-
-#contact {
+.ly_section#contact {
   background-image: url(../img/contact-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .ly_footer_inner {
