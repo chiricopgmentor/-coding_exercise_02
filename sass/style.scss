@@ -19,6 +19,7 @@ a {
   // display: flex;
   // justify-content: center;
 }
+// header start
 .ly_header {
   position: relative; // 背景sliderをabsoluteで設置するため
 }
@@ -35,6 +36,7 @@ a {
   background: rgb(40 47 53 / 80%);
   transition: .3s;
 }
+// header end
 .ly_section_inner {
   display: flex;
   flex-direction: column;
@@ -76,6 +78,7 @@ a {
 // ================================================================
 // module
 // ================================================================
+// header start
 .bl_headerUnit {
   display: flex;
   justify-content: space-between;
@@ -107,16 +110,6 @@ a {
   font-style: italic;
   color: #FFFFFF;
 }
-.el_mainCopy {
-  font-size: 7rem;
-  color: #FFFFFF;
-  margin: 0 0 25px;
-}
-.el_subCopy {
-  font-size: 4rem;
-  color: #FFFFFF;
-  margin: 0 0 170px;
-}
 .bl_bgiCarousel {
   position: absolute;
   z-index: -1;
@@ -131,6 +124,18 @@ a {
   height: 100vh;
   object-fit: cover;
 }
+// header end
+.el_mainCopy {
+  font-size: 7rem;
+  color: #FFFFFF;
+  margin: 0 0 25px;
+}
+.el_subCopy {
+  font-size: 4rem;
+  color: #FFFFFF;
+  margin: 0 0 170px;
+}
+
 .el_sectionTitle {
   font-size: 6rem;
   font-weight: bold;
