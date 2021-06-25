@@ -11,19 +11,20 @@ a {
   text-decoration: none;
 }
 
-.ly_header, .ly_section, .ly_footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .ly_header {
   position: relative;
+}
+
+.ly_header_inner {
+  height: 96px;
+  z-index: 1;
+}
+
+.ly_header_inner__sticky {
+  position: fixed;
+  background: rgba(40, 47, 53, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .ly_section_inner {
@@ -94,7 +95,7 @@ a {
           align-items: center;
 }
 
-.bl_headerMenu {
+.bl_headerUnit {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,43 +108,20 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
-  height: 100%;
-  font-style: italic;
-}
-.bl_headerMenu a {
-  color: #FFFFFF;
-}
-
-.bl_headerMenu_wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 96px;
-  z-index: 1;
-}
-
-.bl_headerMenu_wrapper__sticky {
-  position: fixed;
-  background: rgba(40, 47, 53, 0.8);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .el_siteTitle {
   font-size: 2.6rem;
+  font-style: italic;
+}
+.el_siteTitle a {
+  color: #FFFFFF;
 }
 
 .bl_inSiteLinkList {
@@ -157,13 +135,14 @@ a {
           justify-content: space-between;
   width: 350px;
 }
-
-.bl_inSiteLinkList_item::before {
-  content: none;
+.bl_inSiteLinkList li {
+  list-style: none;
 }
 
 .bl_inSiteLink {
   font-size: 1.6rem;
+  font-style: italic;
+  color: #FFFFFF;
 }
 
 .el_mainCopy {

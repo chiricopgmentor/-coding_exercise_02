@@ -10,8 +10,8 @@ $window = $(window);
 $window.scroll(function() {
   const window_scroll = $(this).scrollTop();
   const window_height = $window.height();
-  const $head_menu = $('.bl_headerMenu_wrapper');
-  const is_sticky = 'bl_headerMenu_wrapper__sticky';
+  const $head_menu = $('.ly_header_inner');
+  const is_sticky = 'ly_header_inner__sticky';
 
   if (window_scroll > window_height) {
     $head_menu.addClass(is_sticky);
