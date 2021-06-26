@@ -15,7 +15,25 @@ a {
 // ================================================================
 // layout
 // ================================================================
-// header start
+.ly_section__bgi {
+  background-size: cover;
+  background-position: center;
+}
+.ly_pageWrapper__outer {
+  width: 100%;
+  max-width: calc(1200px + 15px * 2);
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ly_pageWrapper__inner {
+  width: 100%;
+  max-width: 1000px;
+  // ly_pageWrapper__outerにpaddingがあるためinnerにはpadding不要
+  margin-left: auto;
+  margin-right: auto;
+}
+// header
 .ly_header {
   position: relative; // 背景カルーセルをabsoluteで設置するため
 }
@@ -29,31 +47,12 @@ a {
   background: rgb(40 47 53 / 80%);
   transition: .3s;
 }
-// header end
-// first_view start
-.ly_pageWrapper__outer {
-  width: 100%;
-  max-width: calc(1200px + 15px * 2);
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+// first_view
 #first_view > .ly_pageWrapper__outer {
   height: calc(100vh - 96px); // 画面高さ - ヘッダー高さ
   position: relative;
 }
-// first_view end
-.ly_pageWrapper__inner {
-  width: 100%;
-  max-width: 1000px;
-  // ly_pageWrapper__outerにpaddingがあるためinnerにはpadding不要
-  margin-left: auto;
-  margin-right: auto;
-}
-.ly_section__bgi {
-  background-size: cover;
-  background-position: center;
-}
+// footer
 .ly_footer_inner {
   height: 80px;
   display: flex;
@@ -64,7 +63,6 @@ a {
 // ================================================================
 // module
 // ================================================================
-// header start
 .bl_headerUnit {
   display: flex;
   justify-content: space-between;
@@ -110,8 +108,6 @@ a {
   height: 100vh;
   object-fit: cover;
 }
-// header end
-// first_view start
 .bl_copy {
   position: absolute;
   bottom: 26.22%;
@@ -126,7 +122,6 @@ a {
   color: #FFFFFF;
   margin: 0;
 }
-// first_view end
 .el_sectionTitle {
   font-size: 6rem;
   font-weight: bold;
