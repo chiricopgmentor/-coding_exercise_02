@@ -48,14 +48,7 @@ a {
   margin-right: auto;
 }
 
-.ly_section#works {
-  background-image: url(../img/works-bgi@2x.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.ly_section#contact {
-  background-image: url(../img/contact-bgi@2x.jpg);
+.ly_section__bgi {
   background-size: cover;
   background-position: center;
 }
