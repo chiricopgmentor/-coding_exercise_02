@@ -15,18 +15,11 @@ a {
 // ================================================================
 // layout
 // ================================================================
-.ly_header, .ly_section, .ly_footer {
-  // display: flex;
-  // justify-content: center;
-}
 // header start
 .ly_header {
-  position: relative; // 背景sliderをabsoluteで設置するため
+  position: relative; // 背景カルーセルをabsoluteで設置するため
 }
 .ly_header_inner {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   width: 100%;
   height: 96px;
   z-index: 1;
@@ -39,9 +32,6 @@ a {
 // header end
 // first_view start
 .ly_pageWrapper__outer {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
@@ -51,15 +41,12 @@ a {
 #first_view > .ly_pageWrapper__outer {
   height: calc(100vh - 96px); // 画面高さ - ヘッダー高さ
   position: relative;
-  // flex-direction: row;
-  // justify-content: flex-start;
-  // align-items: flex-end;
 }
 // first_view end
 .ly_pageWrapper__inner {
   width: 100%;
   max-width: 1000px;
-  // ly_pageWrapper__outerがあるためinnerはpadding不要
+  // ly_pageWrapper__outerにpaddingがあるためinnerにはpadding不要
   margin-left: auto;
   margin-right: auto;
 }
