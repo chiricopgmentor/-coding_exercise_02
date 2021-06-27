@@ -53,7 +53,7 @@ a {
   position: relative;
 }
 
-.ly_footer_inner {
+.ly_footer {
   height: 80px;
   display: -webkit-box;
   display: -webkit-flex;
