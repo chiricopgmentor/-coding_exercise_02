@@ -29,7 +29,7 @@ a {
     left: auto;
     right: auto;
   }
-  overflow: hidden;
+  // overflow: hidden;
 }
 .ly_pageWrapper__inner {
   width: 100%;
@@ -172,7 +172,8 @@ margin: 0;
   font-weight: bold;
   color: rgb(23 23 23 / 5%);
   margin-top: 70px;
-  margin-bottom: 70px;
+  margin-bottom: 0;
+  padding-bottom: 70px;
 }
 .bl_cardUnit {
   margin: 0;
