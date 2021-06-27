@@ -163,41 +163,36 @@ margin: 0 0 60px;
   margin: 70px 0;
   // TODO 下マージンがはみ出てるので要対応
 }
-.bl_3colCardUnit {
-  display: flex;
-  box-sizing: border-box;
+.bl_cardUnit {
   margin: 0;
   padding: 0;
+  display: flex;
   li {
     list-style: none;
+    margin-right: 20px;
   }
-}
-.bl_3colCardUnit {
-  margin-bottom: 80px;
-}
-.bl_3colCardUnit_item {
-  margin-right: 20px;
-}
-.bl_3colCardUnit_item:last-of-type {
-  margin-right: 0;
+  li:last-of-type {
+    margin-right: 0;
+  }
 }
 .bl_card_img {
   width: 100%;
+  object-fit: cover;
 }
 .bl_card_text {
   font-size: 1.6rem;
   background-color: #FFFFFF;
   margin: 0;
-  padding: 8% 8%;
+  padding: 8%;
 }
 .bl_bannerUnit {
   margin: 0;
   padding: 0;
+  display: flex;
   li {
     list-style: none;
     width: 100%;
   }
-  display: flex;
 }
 .bl_bannerUnit__fullWidth {
   width: 100vw;
@@ -258,6 +253,9 @@ margin: 0 0 60px;
 // ================================================================
 .hp_mb25 {
   margin-bottom: 25px;
+}
+.hp_mb80 {
+  margin-bottom: 80px;
 }
 .hp_white {
   color: #FFFFFF;
