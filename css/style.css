@@ -295,7 +295,7 @@ a {
   white-space: nowrap;
 }
 
-.bl_btnWrapper {
+.el_btnWrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -306,7 +306,7 @@ a {
           justify-content: center;
 }
 
-.bl_btn {
+.el_btn {
   display: block;
   width: 235px;
   height: 60px;
