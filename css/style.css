@@ -316,6 +316,15 @@ a {
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.el_btn:hover,
+.el_btn:focus {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .bl_contact_msg {

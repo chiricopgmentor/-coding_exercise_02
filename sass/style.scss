@@ -240,6 +240,12 @@ margin: 0;
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
+  transition: .3s;
+}
+.el_btn:hover,
+.el_btn:focus {
+  opacity: .8;
+  transition: .3s;
 }
 .bl_contact_msg {
   color: #FFFFFF;
