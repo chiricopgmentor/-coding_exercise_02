@@ -16,23 +16,29 @@ a {
 // layout
 // ================================================================
 .ly_section__bgi {
-  background-size: cover;
-  background-position: center;
+  background: {
+    size: cover;
+    position: center;
+  }
 }
 .ly_pageWrapper__outer {
   width: 100%;
   max-width: calc(1200px + 15px * 2);
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: {
+    left: auto;
+    right: auto;
+  }
   overflow: hidden;
 }
 .ly_pageWrapper__inner {
   width: 100%;
   max-width: 1000px;
   // ly_pageWrapper__outerにpaddingがあるためinnerにはpadding不要
-  margin-left: auto;
-  margin-right: auto;
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 // header
 .ly_header {
@@ -73,8 +79,10 @@ a {
   max-width: calc(1200px + 15px * 2);
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: {
+    left: auto;
+    right: auto;
+  }
 }
 .el_siteTitle {
   font-size: 2.6rem;
