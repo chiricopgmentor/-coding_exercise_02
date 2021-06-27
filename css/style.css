@@ -262,6 +262,7 @@ a {
 }
 .bl_bannerUnit li {
   list-style: none;
+  width: 100%;
 }
 
 .bl_bannerUnit__fullWidth {
