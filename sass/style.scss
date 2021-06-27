@@ -70,9 +70,10 @@ a {
   height: 100%;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
-  padding: 0 15px;
-  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 .el_siteTitle {
   font-size: 2.6rem;
@@ -126,7 +127,8 @@ a {
   font-size: 6rem;
   font-weight: bold;
   font-style: italic;
-  margin: 100px 0 80px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: inline-flex;
   align-items: center;
 }
@@ -141,7 +143,7 @@ a {
 font-size: 3rem;
 font-weight: bold;
 text-align: center;
-margin: 0 0 60px;
+margin: 0;
 }
 .bl_media {
   display: flex;
@@ -160,7 +162,8 @@ margin: 0 0 60px;
   font-size: 9rem;
   font-weight: bold;
   color: rgb(23 23 23 / 5%);
-  margin: 70px 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
   // TODO 下マージンがはみ出てるので要対応
 }
 .bl_cardUnit {
@@ -242,7 +245,7 @@ margin: 0 0 60px;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0;
 }
 .el_creditTxt {
   font-size: 1.4rem;
@@ -253,6 +256,12 @@ margin: 0 0 60px;
 // ================================================================
 .hp_mb25 {
   margin-bottom: 25px;
+}
+.hp_mb40 {
+  margin-bottom: 40px;
+}
+.hp_mb60 {
+  margin-bottom: 60px;
 }
 .hp_mb80 {
   margin-bottom: 80px;

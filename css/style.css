@@ -85,9 +85,10 @@ a {
   height: 100%;
   width: 100%;
   max-width: calc(1200px + 15px * 2);
-  padding: 0 15px;
-  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .el_siteTitle {
@@ -157,7 +158,8 @@ a {
   font-size: 6rem;
   font-weight: bold;
   font-style: italic;
-  margin: 100px 0 80px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -180,7 +182,7 @@ a {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  margin: 0 0 60px;
+  margin: 0;
 }
 
 .bl_media {
@@ -212,7 +214,8 @@ a {
   font-size: 9rem;
   font-weight: bold;
   color: rgba(23, 23, 23, 0.05);
-  margin: 70px 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .bl_cardUnit {
@@ -319,7 +322,7 @@ a {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  margin: 0 0 40px;
+  margin: 0;
 }
 
 .el_creditTxt {
@@ -329,6 +332,14 @@ a {
 
 .hp_mb25 {
   margin-bottom: 25px;
+}
+
+.hp_mb40 {
+  margin-bottom: 40px;
+}
+
+.hp_mb60 {
+  margin-bottom: 60px;
 }
 
 .hp_mb80 {
