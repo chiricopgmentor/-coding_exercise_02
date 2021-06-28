@@ -77,8 +77,8 @@ a {
 .ly_footer {
   height: $heightFooter;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 // ================================================================
@@ -86,8 +86,8 @@ a {
 // ================================================================
 .bl_headerUnit {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
   width: 100%;
   max-width: $widthLimitOuter;
@@ -111,6 +111,7 @@ a {
 }
 .bl_inSiteLinkList {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 350px;
   li {
@@ -142,12 +143,16 @@ a {
   position: absolute;
   bottom: 26.22%;
   &_main {
-    font-size: 7rem;
+    font: {
+      size: 7rem;
+    }
     color: $colorInversion;
     margin: 0;
   }
   &_sub {
-    font-size: 4rem;
+    font: {
+      size: 4rem;
+    }
     color: $colorInversion;
     margin: 0;
   }
@@ -284,13 +289,16 @@ a {
 }
 .el_btnWrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .el_btn {
   display: block;
   height: 60px;
   width: 235px;
-  font-size: 1.6rem;
+  font: {
+    size: 1.6rem;
+  }
   color: $colorDefault;
   background-color: $colorBtnDefault;
   text-align: center;
