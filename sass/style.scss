@@ -1,8 +1,12 @@
 // ================================================================
 // Sass Variable
 // ================================================================
+$heightHeader: 96px;
+$heightFirstView: 100vh - $heightHeader;
+$heightFooter: 80px;
 $widthBezel: 15px;
 $widthLimitOuter: 1200px + $widthBezel * 2;
+$widthLimitInner: 1000px;
 // ================================================================
 // base
 // ================================================================
@@ -31,28 +35,30 @@ a {
 .ly_pageWrapper {
   &__outer {
     width: 100%;
-    // max-width: calc(1200px + 15px * 2);
     max-width: $widthLimitOuter;
-    padding: 0 15px;
+    padding: {
+      right: $widthBezel;
+      left: $widthBezel;
+    }
     margin: {
-      left: auto;
       right: auto;
+      left: auto;
     }
   }
   &__inner {
     width: 100%;
-    max-width: 1000px;
+    max-width: $widthLimitInner;
     margin: {
-      left: auto;
       right: auto;
+      left: auto;
     }
   }
 }
 .ly_header {
   position: relative; // 背景カルーセルをabsoluteで設置するため
   &_inner {
+    height: $heightHeader;
     width: 100%;
-    height: 96px;
     z-index: 1;
     &__sticky {
       position: fixed;
@@ -62,11 +68,11 @@ a {
   }
 }
 #first_view > .ly_pageWrapper__outer {
-  height: calc(100vh - 96px); // 画面高さ - ヘッダー高さ
+  height: $heightFirstView;
   position: relative;
 }
 .ly_footer {
-  height: 80px;
+  height: $heightFooter;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,12 +87,14 @@ a {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: calc(1200px + 15px * 2);
-  padding-right: 15px;
-  padding-left: 15px;
+  max-width: $widthLimitOuter;
+  padding: {
+    right: $widthBezel;
+    left: $widthBezel;
+  }
   margin: {
-    left: auto;
     right: auto;
+    left: auto;
   }
 }
 .el_siteTitle {
@@ -113,13 +121,13 @@ a {
   position: absolute;
   z-index: -1;
   top: 0;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
   &_img {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -247,8 +255,8 @@ a {
 }
 .el_btn {
   display: block;
-  width: 235px;
   height: 60px;
+  width: 235px;
   font-size: 1.6rem;
   color: #171717;
   background-color: #f7d43f;
