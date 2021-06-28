@@ -7,6 +7,9 @@ $heightFooter: 80px;
 $widthBezel: 15px;
 $widthLimitOuter: 1200px + $widthBezel * 2;
 $widthLimitInner: 1000px;
+$colorBtnDefault: #f7d43f;
+$colorDefault: #171717;
+$colorInversion: #ffffff;
 // ================================================================
 // base
 // ================================================================
@@ -98,10 +101,12 @@ a {
   }
 }
 .el_siteTitle {
-  font-size: 2.6rem;
-  font-style: italic;
+  font: {
+    size: 2.6rem;
+    style: italic;
+  }
   a {
-    color: #ffffff;
+    color: $colorInversion;
   }
 }
 .bl_inSiteLinkList {
@@ -113,9 +118,11 @@ a {
   }
 }
 .bl_inSiteLink {
-  font-size: 1.6rem;
-  font-style: italic;
-  color: #ffffff;
+  font: {
+    size: 1.6rem;
+    style: italic;
+  }
+  color: $colorInversion;
 }
 .bl_bgiCarousel {
   position: absolute;
@@ -136,21 +143,25 @@ a {
   bottom: 26.22%;
   &_main {
     font-size: 7rem;
-    color: #ffffff;
+    color: $colorInversion;
     margin: 0;
   }
   &_sub {
     font-size: 4rem;
-    color: #ffffff;
+    color: $colorInversion;
     margin: 0;
   }
 }
 .el_sectionTitle {
-  font-size: 6rem;
-  font-weight: bold;
-  font-style: italic;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  font: {
+    size: 6rem;
+    weight: bold;
+    style: italic;
+  }
+  margin: {
+    top: 100px;
+    bottom: 80px;
+  }
   display: inline-flex;
   align-items: center;
   &::after {
@@ -158,12 +169,16 @@ a {
     display: inline-block;
     border: 2px solid;
     width: 200px;
-    margin-left: 1em;
+    margin: {
+      left: 1em;
+    }
   }
 }
 .el_sectionLead {
-  font-size: 3rem;
-  font-weight: bold;
+  font: {
+    size: 3rem;
+    weight: bold;
+  }
   text-align: center;
   margin: 0;
 }
@@ -172,8 +187,10 @@ a {
   justify-content: space-between;
   align-items: center;
   &_text {
-    font-size: 1.6rem;
-    font-weight: bold;
+    font: {
+      size: 1.6rem;
+      weight: bold;
+    }
     width: 44%;
   }
   &_img {
@@ -181,12 +198,18 @@ a {
   }
 }
 .el_bgText {
-  font-size: 9rem;
-  font-weight: bold;
+  font: {
+    size: 9rem;
+    weight: bold;
+  }
   color: rgb(23 23 23 / 5%);
-  margin-top: 70px;
-  margin-bottom: 0;
-  padding-bottom: 70px;
+  margin: {
+    top: 70px;
+    bottom: 0;
+  }
+  padding: {
+    bottom: 70px;
+  }
 }
 .bl_cardUnit {
   margin: 0;
@@ -194,9 +217,13 @@ a {
   display: flex;
   li {
     list-style: none;
-    margin-right: 20px;
+    margin: {
+      right: 20px;
+    }
     &:last-of-type {
-      margin-right: 0;
+      margin: {
+        right: 0;
+      }
     }
   }
 }
@@ -206,8 +233,10 @@ a {
     object-fit: cover;
   }
   &_text {
-    font-size: 1.6rem;
-    background-color: #ffffff;
+    font: {
+      size: 1.6rem;
+    }
+    background-color: $colorInversion;
     margin: 0;
     padding: 8%;
   }
@@ -222,8 +251,10 @@ a {
   }
   &__fullWidth {
     width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    margin: {
+      right: calc(50% - 50vw);
+      left: calc(50% - 50vw);
+    }
   }
 }
 .bl_banner {
@@ -242,10 +273,12 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-size: 4rem;
-    font-weight: bold;
-    font-style: italic;
+    color: $colorInversion;
+    font: {
+      size: 4rem;
+      weight: bold;
+      style: italic;
+    }
     white-space: nowrap;
   }
 }
@@ -258,27 +291,32 @@ a {
   height: 60px;
   width: 235px;
   font-size: 1.6rem;
-  color: #171717;
-  background-color: #f7d43f;
+  color: $colorDefault;
+  background-color: $colorBtnDefault;
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
   transition: 0.3s;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.8;
     transition: 0.3s;
   }
 }
 .el_contactMsg {
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: bold;
+  font: {
+    size: 2rem;
+    weight: bold;
+  }
   text-align: center;
+  color: $colorInversion;
   margin: 0;
 }
 .el_creditTxt {
-  font-size: 1.4rem;
-  font-weight: bold;
+  font: {
+    size: 1.4rem;
+    weight: bold;
+  }
 }
 // ================================================================
 // helper
@@ -296,7 +334,7 @@ a {
   margin-bottom: 80px;
 }
 .hp_white {
-  color: #ffffff;
+  color: $colorInversion;
 }
 .hp_bgWhite {
   color: rgb(255 255 255 / 5%);
