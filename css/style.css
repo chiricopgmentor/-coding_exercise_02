@@ -19,23 +19,24 @@ a {
 .ly_pageWrapper__outer {
   width: 100%;
   max-width: 1230px;
-  padding: 0 15px;
-  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 .ly_pageWrapper__inner {
   width: 100%;
   max-width: 1000px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .ly_header {
   position: relative;
 }
 .ly_header_inner {
-  width: 100%;
   height: 96px;
+  width: 100%;
   z-index: 1;
 }
 .ly_header_inner__sticky {
@@ -56,14 +57,14 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bl_headerUnit {
@@ -71,21 +72,21 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 100%;
   width: 100%;
   max-width: 1230px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .el_siteTitle {
@@ -101,6 +102,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -121,14 +126,14 @@ a {
   position: absolute;
   z-index: -1;
   top: 0;
-  width: 100%;
   height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 .bl_bgiCarousel_img {
-  width: 100%;
   height: 100vh;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -252,8 +257,8 @@ a {
 }
 .bl_bannerUnit__fullWidth {
   width: 100vw;
-  margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
 }
 
 .bl_banner {
@@ -286,6 +291,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -294,8 +303,8 @@ a {
 
 .el_btn {
   display: block;
-  width: 235px;
   height: 60px;
+  width: 235px;
   font-size: 1.6rem;
   color: #171717;
   background-color: #f7d43f;
@@ -312,10 +321,10 @@ a {
 }
 
 .el_contactMsg {
-  color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  color: #ffffff;
   margin: 0;
 }
 

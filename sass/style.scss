@@ -2,7 +2,7 @@
 // Sass Variable
 // ================================================================
 $heightHeader: 96px;
-$heightFirstView: 100vh - $heightHeader;
+$heightFirstView: calc(100vh - #{$heightHeader});
 $heightFooter: 80px;
 $widthBezel: 15px;
 $widthLimitOuter: 1200px + $widthBezel * 2;
