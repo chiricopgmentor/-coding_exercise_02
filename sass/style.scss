@@ -15,50 +15,50 @@ a {
 // ================================================================
 // layout
 // ================================================================
-.ly_section__bgi {
-  background: {
-    size: cover;
-    position: center;
+.ly_section {
+  &__bgi {
+    background: {
+      size: cover;
+      position: center;
+    }
   }
 }
-.ly_pageWrapper__outer {
-  width: 100%;
-  max-width: calc(1200px + 15px * 2);
-  padding: 0 15px;
-  margin: {
-    left: auto;
-    right: auto;
+.ly_pageWrapper {
+  &__outer {
+    width: 100%;
+    max-width: calc(1200px + 15px * 2);
+    padding: 0 15px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+  &__inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: {
+      left: auto;
+      right: auto;
+    }
   }
 }
-.ly_pageWrapper__inner {
-  width: 100%;
-  max-width: 1000px;
-  // ly_pageWrapper__outerにpaddingがあるためinnerにはpadding不要
-  margin: {
-    left: auto;
-    right: auto;
-  }
-}
-// header
 .ly_header {
   position: relative; // 背景カルーセルをabsoluteで設置するため
+  &_inner {
+    width: 100%;
+    height: 96px;
+    z-index: 1;
+    &__sticky {
+      position: fixed;
+      background: rgb(40 47 53 / 80%);
+      transition: 0.3s;
+    }
+  }
 }
-.ly_header_inner {
-  width: 100%;
-  height: 96px;
-  z-index: 1;
-}
-.ly_header_inner__sticky {
-  position: fixed;
-  background: rgb(40 47 53 / 80%);
-  transition: 0.3s;
-}
-// first_view
 #first_view > .ly_pageWrapper__outer {
   height: calc(100vh - 96px); // 画面高さ - ヘッダー高さ
   position: relative;
 }
-// footer
 .ly_footer {
   height: 80px;
   display: flex;
@@ -120,16 +120,16 @@ a {
 .bl_copy {
   position: absolute;
   bottom: 26.22%;
-}
-.bl_copy_main {
-  font-size: 7rem;
-  color: #ffffff;
-  margin: 0;
-}
-.bl_copy_sub {
-  font-size: 4rem;
-  color: #ffffff;
-  margin: 0;
+  &_main {
+    font-size: 7rem;
+    color: #ffffff;
+    margin: 0;
+  }
+  &_sub {
+    font-size: 4rem;
+    color: #ffffff;
+    margin: 0;
+  }
 }
 .el_sectionTitle {
   font-size: 6rem;
@@ -139,13 +139,13 @@ a {
   margin-bottom: 80px;
   display: inline-flex;
   align-items: center;
-}
-.el_sectionTitle::after {
-  content: "";
-  display: inline-block;
-  border: 2px solid;
-  width: 200px;
-  margin-left: 1em;
+  &::after {
+    content: "";
+    display: inline-block;
+    border: 2px solid;
+    width: 200px;
+    margin-left: 1em;
+  }
 }
 .el_sectionLead {
   font-size: 3rem;
@@ -157,14 +157,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.bl_media_text {
-  font-size: 1.6rem;
-  font-weight: bold;
-  width: 44%;
-}
-.bl_media_img {
-  width: 44%;
+  &_text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 44%;
+  }
+  &_img {
+    width: 44%;
+  }
 }
 .el_bgText {
   font-size: 9rem;
@@ -206,34 +206,34 @@ a {
     list-style: none;
     width: 100%;
   }
-}
-.bl_bannerUnit__fullWidth {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  &__fullWidth {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
 }
 .bl_banner {
   position: relative;
-}
-.bl_banner:hover {
-  .bl_banner_img {
-    filter: brightness(50%);
+  &:hover {
+    .bl_banner_img {
+      filter: brightness(50%);
+    }
   }
-}
-.bl_banner_img {
-  width: 100%;
-  object-fit: cover;
-}
-.bl_banner_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 4rem;
-  font-weight: bold;
-  font-style: italic;
-  white-space: nowrap;
+  &_img {
+    width: 100%;
+    object-fit: cover;
+  }
+  &_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    white-space: nowrap;
+  }
 }
 .el_btnWrapper {
   display: flex;
@@ -250,13 +250,12 @@ a {
   line-height: 60px;
   border-radius: 30px;
   transition: 0.3s;
+  &:hover, &:focus {
+    opacity: 0.8;
+    transition: 0.3s;
+  }
 }
-.el_btn:hover,
-.el_btn:focus {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-.bl_contact_msg {
+.el_contactMsg {
   color: #ffffff;
   font-size: 2rem;
   font-weight: bold;
