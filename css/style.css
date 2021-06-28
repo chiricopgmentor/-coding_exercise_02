@@ -18,7 +18,7 @@ a {
 
 .ly_pageWrapper__outer {
   width: 100%;
-  max-width: calc(1200px + 15px * 2);
+  max-width: 1230px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
