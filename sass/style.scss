@@ -112,6 +112,7 @@ a {
 .el_siteTitle {
   font: {
     size: 2.6rem;
+    weight: bold;
     style: italic;
   }
   a {
@@ -126,10 +127,14 @@ a {
   li {
     list-style: none;
   }
+  @include mq {
+    display: none;
+  }
 }
 .bl_inSiteLink {
   font: {
     size: 1.6rem;
+    weight: bold;
     style: italic;
   }
   color: $colorInversion;
@@ -154,6 +159,12 @@ a {
   &_main {
     font: {
       size: 7rem;
+      weight: bold;
+    }
+    @include mq {
+      font: {
+        size: 3.7rem;
+      }
     }
     color: $colorInversion;
     margin: 0;
@@ -161,6 +172,12 @@ a {
   &_sub {
     font: {
       size: 4rem;
+      weight: bold;
+    }
+    @include mq {
+      font: {
+        size: 3rem;
+      }
     }
     color: $colorInversion;
     margin: 0;
@@ -191,7 +208,7 @@ a {
       }
       background: currentColor;
       width: 3.33em;
-      height: .05em;
+      height: 0.05em;
       margin: {
         left: 1em;
       }
@@ -306,6 +323,15 @@ a {
     white-space: nowrap;
   }
 }
+.el_contactMsg {
+  font: {
+    size: 2rem;
+    weight: bold;
+  }
+  text-align: center;
+  color: $colorInversion;
+  margin: 0;
+}
 .el_btnWrapper {
   display: flex;
   align-items: center;
@@ -317,6 +343,7 @@ a {
   width: 235px;
   font: {
     size: 1.6rem;
+    weight: bold;
   }
   color: $colorDefault;
   background-color: $colorBtnDefault;
@@ -329,15 +356,6 @@ a {
     opacity: 0.8;
     transition: 0.3s;
   }
-}
-.el_contactMsg {
-  font: {
-    size: 2rem;
-    weight: bold;
-  }
-  text-align: center;
-  color: $colorInversion;
-  margin: 0;
 }
 .el_creditTxt {
   font: {
@@ -367,6 +385,5 @@ a {
   color: rgb(255 255 255 / 5%);
 }
 .hp_right {
-margin-left: auto;
-// justify-content: right;
+  margin-left: auto;
 }

@@ -91,6 +91,7 @@ a {
 
 .el_siteTitle {
   font-size: 2.6rem;
+  font-weight: bold;
   font-style: italic;
 }
 .el_siteTitle a {
@@ -115,9 +116,15 @@ a {
 .bl_inSiteLinkList li {
   list-style: none;
 }
+@media screen and (max-width: 768px) {
+  .bl_inSiteLinkList {
+    display: none;
+  }
+}
 
 .bl_inSiteLink {
   font-size: 1.6rem;
+  font-weight: bold;
   font-style: italic;
   color: #ffffff;
 }
@@ -144,13 +151,25 @@ a {
 }
 .bl_copy_main {
   font-size: 7rem;
+  font-weight: bold;
   color: #ffffff;
   margin: 0;
 }
+@media screen and (max-width: 768px) {
+  .bl_copy_main {
+    font-size: 3.7rem;
+  }
+}
 .bl_copy_sub {
   font-size: 4rem;
+  font-weight: bold;
   color: #ffffff;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .bl_copy_sub {
+    font-size: 3rem;
+  }
 }
 
 .el_sectionTitle {
@@ -297,6 +316,14 @@ a {
   white-space: nowrap;
 }
 
+.el_contactMsg {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
 .el_btnWrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -317,6 +344,7 @@ a {
   height: 60px;
   width: 235px;
   font-size: 1.6rem;
+  font-weight: bold;
   color: #171717;
   background-color: #f7d43f;
   text-align: center;
@@ -329,14 +357,6 @@ a {
   opacity: 0.8;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.el_contactMsg {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-  margin: 0;
 }
 
 .el_creditTxt {
