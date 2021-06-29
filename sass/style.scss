@@ -176,15 +176,35 @@ a {
     top: 100px;
     bottom: 80px;
   }
-  display: inline-flex;
-  align-items: center;
-  &::after {
-    content: "";
-    display: inline-block;
-    border: 2px solid;
-    width: 200px;
-    margin: {
-      left: 1em;
+  // &__rightDash {
+  //   display: inline-block;
+  //   position: relative;
+  //   &::after {
+  //     display: inline-block;
+  //     content: "";
+  //     border: {
+  //       width: 0;
+  //       style: solid;
+  //     }
+  //     background: currentColor;
+  //     width: 3.33em;
+  //     height: .05em;
+  //     position: absolute;
+  //     top: 50%;
+  //     transform: translate(1em, -50%);
+  //   }
+  // }
+  &__rightDash {
+    display: inline-flex;
+    align-items: center;
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 2px solid;
+      width: 3.33em;
+      margin: {
+        left: 1em;
+      }
     }
   }
 }
@@ -357,5 +377,5 @@ a {
   color: rgb(255 255 255 / 5%);
 }
 .hp_right {
-  margin-left: auto;
+margin-left: auto;
 }
