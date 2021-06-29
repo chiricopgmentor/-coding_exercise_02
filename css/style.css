@@ -116,11 +116,6 @@ a {
 .bl_inSiteLinkList li {
   list-style: none;
 }
-@media screen and (max-width: 768px) {
-  .bl_inSiteLinkList {
-    display: none;
-  }
-}
 
 .bl_inSiteLink {
   font-size: 1.6rem;
@@ -157,7 +152,9 @@ a {
 }
 @media screen and (max-width: 768px) {
   .bl_copy_main {
+    margin-top: calc(100vh / 3 - 96px);
     font-size: 3.7rem;
+    text-align: center;
   }
 }
 .bl_copy_sub {
@@ -165,10 +162,20 @@ a {
   font-weight: bold;
   color: #ffffff;
   margin: 0;
+  -webkit-transform: translateX(1em);
+          transform: translateX(1em);
 }
 @media screen and (max-width: 768px) {
   .bl_copy_sub {
     font-size: 3rem;
+    -webkit-transform: none;
+            transform: none;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bl_copy {
+    position: static;
   }
 }
 
@@ -390,4 +397,19 @@ a {
 
 .hp_right {
   margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .pc_only {
+    display: none;
+  }
+}
+
+.md_only {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .md_only {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

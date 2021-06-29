@@ -127,9 +127,6 @@ a {
   li {
     list-style: none;
   }
-  @include mq {
-    display: none;
-  }
 }
 .bl_inSiteLink {
   font: {
@@ -162,9 +159,13 @@ a {
       weight: bold;
     }
     @include mq {
+      margin: {
+        top: calc(100vh / 3 - #{$heightHeader});
+      }
       font: {
         size: 3.7rem;
       }
+      text-align: center;
     }
     color: $colorInversion;
     margin: 0;
@@ -178,9 +179,15 @@ a {
       font: {
         size: 3rem;
       }
+      transform: none;
+      text-align: center;
     }
     color: $colorInversion;
     margin: 0;
+    transform: translateX(1em);
+  }
+  @include mq {
+    position: static;
   }
 }
 .el_sectionTitle {
@@ -386,4 +393,15 @@ a {
 }
 .hp_right {
   margin-left: auto;
+}
+.pc_only {
+  @include mq {
+    display: none;
+  }
+}
+.md_only {
+  display: none;
+  @include mq {
+    display: block;
+  }
 }
