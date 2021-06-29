@@ -176,32 +176,22 @@ a {
     top: 100px;
     bottom: 80px;
   }
-  // &__rightDash {
-  //   display: inline-block;
-  //   position: relative;
-  //   &::after {
-  //     display: inline-block;
-  //     content: "";
-  //     border: {
-  //       width: 0;
-  //       style: solid;
-  //     }
-  //     background: currentColor;
-  //     width: 3.33em;
-  //     height: .05em;
-  //     position: absolute;
-  //     top: 50%;
-  //     transform: translate(1em, -50%);
-  //   }
-  // }
+  &_wrapper {
+    display: flex;
+  }
   &__rightDash {
     display: inline-flex;
     align-items: center;
     &::after {
       content: "";
       display: inline-block;
-      border: 2px solid;
+      border: {
+        width: 0;
+        style: solid;
+      }
+      background: currentColor;
       width: 3.33em;
+      height: .05em;
       margin: {
         left: 1em;
       }
@@ -378,4 +368,5 @@ a {
 }
 .hp_right {
 margin-left: auto;
+// justify-content: right;
 }

@@ -160,6 +160,12 @@ a {
   margin-top: 100px;
   margin-bottom: 80px;
 }
+.el_sectionTitle_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .el_sectionTitle__rightDash {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -173,8 +179,11 @@ a {
 .el_sectionTitle__rightDash::after {
   content: "";
   display: inline-block;
-  border: 2px solid;
+  border-width: 0;
+  border-style: solid;
+  background: currentColor;
   width: 3.33em;
+  height: 0.05em;
   margin-left: 1em;
 }
 
