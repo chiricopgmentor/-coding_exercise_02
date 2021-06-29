@@ -1,3 +1,12 @@
+:root {
+  --heightHeader: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --heightHeader: 65px;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -35,7 +44,7 @@ a {
   position: relative;
 }
 .ly_header_inner {
-  height: 96px;
+  height: var(--heightHeader);
   width: 100%;
   z-index: 1;
 }
@@ -47,7 +56,7 @@ a {
 }
 
 #first_view > .ly_pageWrapper__outer {
-  height: calc(100vh - 96px);
+  height: calc(100vh - var(--heightHeader));
   position: relative;
 }
 
@@ -152,7 +161,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .bl_copy_main {
-    margin-top: calc(100vh / 3 - 96px);
+    margin-top: calc(100vh / 3 - var(--heightHeader));
     font-size: 3.7rem;
     text-align: center;
   }
