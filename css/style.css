@@ -161,7 +161,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .bl_copy_main {
-    margin-top: calc(100vh / 3 - var(--heightHeader));
+    padding-top: calc(100vh / 3 - var(--heightHeader));
     font-size: 3.7rem;
     text-align: center;
   }
@@ -195,6 +195,11 @@ a {
   margin-top: 100px;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 768px) {
+  .el_sectionTitle {
+    font-size: 3rem;
+  }
+}
 .el_sectionTitle_wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -221,12 +226,24 @@ a {
   height: 0.05em;
   margin-left: 1em;
 }
+@media screen and (max-width: 768px) {
+  .el_sectionTitle__rightDash::after {
+    width: 4em;
+    height: 0.2em;
+    margin-left: 1.5em;
+  }
+}
 
 .el_sectionLead {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .el_sectionLead {
+    font-size: 2rem;
+  }
 }
 
 .bl_media {
@@ -243,13 +260,28 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .bl_media {
+    display: block;
+  }
+}
 .bl_media_text {
   font-size: 1.6rem;
   font-weight: bold;
   width: 44%;
 }
+@media screen and (max-width: 768px) {
+  .bl_media_text {
+    width: 100%;
+  }
+}
 .bl_media_img {
   width: 44%;
+}
+@media screen and (max-width: 768px) {
+  .bl_media_img {
+    width: 100%;
+  }
 }
 
 .el_bgText {
@@ -259,6 +291,11 @@ a {
   margin-top: 70px;
   margin-bottom: 0;
   padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .el_bgText {
+    font-size: 4rem;
+  }
 }
 
 .bl_cardUnit {
@@ -406,6 +443,7 @@ a {
 
 .hp_right {
   margin-left: auto;
+  text-align: right;
 }
 
 @media screen and (max-width: 768px) {

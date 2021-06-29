@@ -173,7 +173,7 @@ a {
       weight: bold;
     }
     @include mq {
-      margin: {
+      padding: {
         top: calc(100vh / 3 - #{$heightHeader});
       }
       font: {
@@ -214,6 +214,11 @@ a {
     top: 100px;
     bottom: 80px;
   }
+  @include mq {
+    font: {
+      size: 3rem;
+    }
+  }
   &_wrapper {
     display: flex;
   }
@@ -233,6 +238,13 @@ a {
       margin: {
         left: 1em;
       }
+      @include mq {
+        width: 4em;
+        height: .2em;
+        margin: {
+          left: 1.5em;
+        }
+      }
     }
   }
 }
@@ -243,20 +255,34 @@ a {
   }
   text-align: center;
   margin: 0;
+  @include mq {
+    font: {
+      size: 2rem;
+    }
+  }
 }
 .bl_media {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mq {
+    display: block;
+  }
   &_text {
     font: {
       size: 1.6rem;
       weight: bold;
     }
     width: 44%;
+    @include mq {
+      width: 100%;
+    }
   }
   &_img {
     width: 44%;
+    @include mq {
+      width: 100%;
+    }
   }
 }
 .el_bgText {
@@ -271,6 +297,11 @@ a {
   }
   padding: {
     bottom: 70px;
+  }
+  @include mq {
+    font: {
+      size: 4rem;
+    }
   }
 }
 .bl_cardUnit {
@@ -407,6 +438,7 @@ a {
 }
 .hp_right {
   margin-left: auto;
+  text-align: right;
 }
 .pc_only {
   @include mq {
