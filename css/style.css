@@ -459,4 +459,10 @@ a {
   .md_only {
     display: block;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .hp_mb50__md {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */

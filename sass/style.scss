@@ -451,3 +451,8 @@ a {
     display: block;
   }
 }
+.hp_mb50__md {
+  @include mq {
+    margin-bottom: 50px;
+  }
+}
