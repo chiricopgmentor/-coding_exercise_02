@@ -29,7 +29,7 @@ $breakpoint: 768px;
 // ================================================================
 @include mq {
   :root {
-    --heightHeader: 65px;
+    --heightHeader: 36px;
   }
 }
 // ================================================================
@@ -84,6 +84,9 @@ a {
   z-index: 1;
   height: $heightHeader;
   width: 100%;
+  @include mq {
+    top: 30px;
+  }
   &_wrapper {
     position: relative;
   }
@@ -145,6 +148,52 @@ a {
       style: italic;
     }
     color: $colorInversion;
+  }
+}
+.bl_humburgerBtn {
+  position: fixed;
+  top: 33px;
+  right: 15px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  background: none;
+  padding: 0;
+  // justify-content: center;
+  // align-items: center;
+  &_bar {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 30px;
+    background: $colorInversion;
+    &__top {
+      transform: translate(0px, -10px);
+      transition: 0.3s;
+    }
+    &__mid {
+      opacity: 1;
+      transition: 0.3s;
+    }
+    &__btm {
+      transform: translate(0px, 10px);
+      transition: 0.3s;
+    }
+  }
+  &__cross {
+    .bl_humburgerBtn_bar__top {
+      transform: rotate(0.125turn);
+      transition: 0.3s;
+    }
+    .bl_humburgerBtn_bar__mid {
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .bl_humburgerBtn_bar__btm {
+      transform: rotate(-0.125turn);
+      transition: 0.3s;
+    }
   }
 }
 .bl_bgiCarousel {

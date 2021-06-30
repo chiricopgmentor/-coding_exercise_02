@@ -33,3 +33,17 @@ $window.resize(function () {
     $header.removeClass(is_sticky);
   }
 });
+
+// ハンバーガーボタンクリックイベント
+$('.bl_humburgerBtn').click(function () {
+  $('.bl_humburgerBtn').toggleClass('bl_humburgerBtn__cross');
+  // $('.header_nav').toggleClass('header_nav--menu_open');
+  // $('body').toggleClass('noscroll');
+});
+
+// サイトメニュークリックイベント
+// $('.in_site_link').click(function () {
+//   $('.hamburger_btn__bar').removeClass('hamburger_btn__bar--cross');
+//   $('.header_nav').removeClass('header_nav--menu_open');
+//   $('body').removeClass('noscroll');
+// });

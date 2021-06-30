@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 768px) {
   :root {
-    --heightHeader: 65px;
+    --heightHeader: 36px;
   }
 }
 html {
@@ -45,6 +45,11 @@ a {
   z-index: 1;
   height: var(--heightHeader);
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .ly_header {
+    top: 30px;
+  }
 }
 .ly_header_wrapper {
   position: relative;
@@ -124,6 +129,59 @@ a {
   font-weight: bold;
   font-style: italic;
   color: #ffffff;
+}
+
+.bl_humburgerBtn {
+  position: fixed;
+  top: 33px;
+  right: 15px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  background: none;
+  padding: 0;
+}
+.bl_humburgerBtn_bar {
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 30px;
+  background: #ffffff;
+}
+.bl_humburgerBtn_bar__top {
+  -webkit-transform: translate(0px, -10px);
+          transform: translate(0px, -10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bl_humburgerBtn_bar__mid {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bl_humburgerBtn_bar__btm {
+  -webkit-transform: translate(0px, 10px);
+          transform: translate(0px, 10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bl_humburgerBtn__cross .bl_humburgerBtn_bar__top {
+  -webkit-transform: rotate(0.125turn);
+          transform: rotate(0.125turn);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bl_humburgerBtn__cross .bl_humburgerBtn_bar__mid {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.bl_humburgerBtn__cross .bl_humburgerBtn_bar__btm {
+  -webkit-transform: rotate(-0.125turn);
+          transform: rotate(-0.125turn);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .bl_bgiCarousel {
