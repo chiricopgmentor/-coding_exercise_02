@@ -320,14 +320,28 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  @include mq {
+    flex-direction: column;
+  }
   li {
     list-style: none;
     margin: {
       right: 20px;
     }
+    @include mq {
+      margin: {
+        right: 0;
+        bottom: 30px;
+      }
+    }
     &:last-of-type {
       margin: {
         right: 0;
+      }
+      @include mq {
+        margin: {
+          bottom: 0;
+        }
       }
     }
   }

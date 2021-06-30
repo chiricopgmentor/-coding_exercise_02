@@ -323,12 +323,32 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .bl_cardUnit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .bl_cardUnit li {
   list-style: none;
   margin-right: 20px;
 }
+@media screen and (max-width: 768px) {
+  .bl_cardUnit li {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
 .bl_cardUnit li:last-of-type {
   margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .bl_cardUnit li:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .bl_card_img {
