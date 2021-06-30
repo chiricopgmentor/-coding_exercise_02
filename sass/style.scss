@@ -279,10 +279,6 @@ a {
     &::after {
       content: "";
       display: inline-block;
-      border: {
-        width: 0;
-        style: solid;
-      }
       background: currentColor;
       width: 3.33em;
       height: 0.05em;
