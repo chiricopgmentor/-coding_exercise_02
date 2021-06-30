@@ -527,23 +527,23 @@ a {
     display: none !important;
   }
 }
-.md_only {
+.sp_only {
   display: none !important;
   @include mq {
     display: block !important;
   }
 }
-.hp_mb50__md {
+.hp_mb50__sp {
   @include mq {
     margin-bottom: 50px !important;
   }
 }
-.hp_mb30__md {
+.hp_mb30__sp {
   @include mq {
     margin-bottom: 30px !important;
   }
 }
-.hp_pb64__md {
+.hp_pb64__sp {
   @include mq {
     padding-bottom: 64px !important;
   }

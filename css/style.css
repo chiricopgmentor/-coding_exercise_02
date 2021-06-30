@@ -562,29 +562,29 @@ a {
   }
 }
 
-.md_only {
+.sp_only {
   display: none !important;
 }
 @media screen and (max-width: 768px) {
-  .md_only {
+  .sp_only {
     display: block !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hp_mb50__md {
+  .hp_mb50__sp {
     margin-bottom: 50px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hp_mb30__md {
+  .hp_mb30__sp {
     margin-bottom: 30px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .hp_pb64__md {
+  .hp_pb64__sp {
     padding-bottom: 64px !important;
   }
 }/*# sourceMappingURL=style.css.map */
