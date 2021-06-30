@@ -434,46 +434,46 @@ a {
 // helper
 // ================================================================
 .hp_mb25 {
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
 }
 .hp_mb40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 .hp_mb60 {
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 .hp_mb80 {
-  margin-bottom: 80px;
+  margin-bottom: 80px !important;
 }
 .hp_white {
-  color: $colorInversion;
+  color: $colorInversion !important;
 }
 .hp_bgWhite {
-  color: rgb(255 255 255 / 5%);
+  color: rgb(255 255 255 / 5%) !important;
 }
 .hp_right {
-  margin-left: auto;
-  text-align: right;
+  margin-left: auto !important;
+  text-align: right !important;
 }
 .pc_only {
   @include mq {
-    display: none;
+    display: none !important;
   }
 }
 .md_only {
-  display: none;
+  display: none !important;
   @include mq {
-    display: block;
+    display: block !important;
   }
 }
 .hp_mb50__md {
   @include mq {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
   }
 }
 .hp_mb30__md {
   @include mq {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 }
 .hp_pb64__md {
