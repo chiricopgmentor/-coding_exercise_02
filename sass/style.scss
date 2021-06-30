@@ -8,7 +8,6 @@
 // Sass Variable
 // ================================================================
 $heightHeader: var(--heightHeader);
-$heightFirstView: calc(100vh - #{$heightHeader});
 $heightFooter: 80px;
 $widthBezel: 15px;
 $widthLimitOuter: 1200px + $widthBezel * 2;
@@ -81,21 +80,33 @@ a {
   }
 }
 .ly_header {
-  position: relative; // 背景カルーセルをabsoluteで設置するため
+  position: absolute;
+  z-index: 1;
+  height: $heightHeader;
+  width: 100%;
+  &_wrapper {
+    position: relative;
+  }
   &_inner {
-    height: $heightHeader;
-    width: 100%;
-    z-index: 1;
-    &__sticky {
-      position: fixed;
-      background: rgb(40 47 53 / 80%);
-      transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: $widthLimitOuter;
+    padding: {
+      right: $widthBezel;
+      left: $widthBezel;
+    }
+    margin: {
+      right: auto;
+      left: auto;
     }
   }
-}
-#first_view > .ly_pageWrapper__outer {
-  height: $heightFirstView;
-  position: relative;
+  &__sticky {
+    position: fixed;
+    background: rgb(40 47 53 / 80%);
+    transition: 0.3s;
+  }
 }
 .ly_footer {
   height: $heightFooter;
@@ -107,22 +118,6 @@ a {
 // ================================================================
 // module
 // ================================================================
-.bl_headerUnit {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
-  max-width: $widthLimitOuter;
-  padding: {
-    right: $widthBezel;
-    left: $widthBezel;
-  }
-  margin: {
-    right: auto;
-    left: auto;
-  }
-}
 .el_siteTitle {
   font: {
     size: 2.6rem;
@@ -133,31 +128,35 @@ a {
     color: $colorInversion;
   }
 }
-.bl_inSiteLinkList {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 350px;
-  li {
-    list-style: none;
+.bl_headerNav {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    li {
+      list-style: none;
+    }
   }
-}
-.bl_inSiteLink {
-  font: {
-    size: 1.6rem;
-    weight: bold;
-    style: italic;
+  &_link {
+    font: {
+      size: 1.6rem;
+      weight: bold;
+      style: italic;
+    }
+    color: $colorInversion;
   }
-  color: $colorInversion;
 }
 .bl_bgiCarousel {
   position: absolute;
-  z-index: -1;
-  top: 0;
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
+  &_wrapper {
+    position: relative;
+    z-index: -1;
+  }
   &_img {
     height: 100vh;
     width: 100%;
@@ -166,16 +165,26 @@ a {
 }
 .bl_copy {
   position: absolute;
-  bottom: 26.22%;
+  bottom: 22.67%;
+  @include mq {
+    position: static;
+  }
+  &_wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    @include mq {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
   &_main {
     font: {
       size: 7rem;
       weight: bold;
     }
     @include mq {
-      padding: {
-        top: calc(100vh / 3 - #{$heightHeader});
-      }
       font: {
         size: 3.7rem;
       }
@@ -189,6 +198,9 @@ a {
       size: 4rem;
       weight: bold;
     }
+    color: $colorInversion;
+    margin: 0;
+    transform: translateX(1em);
     @include mq {
       font: {
         size: 3rem;
@@ -196,12 +208,6 @@ a {
       transform: none;
       text-align: center;
     }
-    color: $colorInversion;
-    margin: 0;
-    transform: translateX(1em);
-  }
-  @include mq {
-    position: static;
   }
 }
 .el_sectionTitle {
@@ -240,7 +246,7 @@ a {
       }
       @include mq {
         width: 4em;
-        height: .2em;
+        height: 0.2em;
         margin: {
           left: 1.5em;
         }

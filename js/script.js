@@ -14,13 +14,13 @@ $window.scroll(function () {
   if (window_width >= breakpoint) {
     const window_scroll = $(this).scrollTop();
     const window_height = $window.height();
-    const $head_menu = $(".ly_header_inner");
-    const is_sticky = "ly_header_inner__sticky";
+    const $header = $(".ly_header");
+    const is_sticky = "ly_header__sticky";
 
     if (window_scroll > window_height) {
-      $head_menu.addClass(is_sticky);
+      $header.addClass(is_sticky);
     } else {
-      $head_menu.removeClass(is_sticky);
+      $header.removeClass(is_sticky);
     }
   }
 });
