@@ -13,8 +13,8 @@ $widthBezel: 15px;
 $widthLimitOuter: 1200px + $widthBezel * 2;
 $widthLimitInner: 1000px;
 $colorBtnDefault: #f7d43f;
-$colorDefault: #171717;
-$colorInversion: #ffffff;
+$colorBlack: #171717;
+$colorWhite: #ffffff;
 $breakpoint: 768px;
 // ================================================================
 // Sass Mixin
@@ -128,7 +128,7 @@ a {
     style: italic;
   }
   a {
-    color: $colorInversion;
+    color: $colorWhite;
   }
 }
 .bl_headerNav {
@@ -147,7 +147,7 @@ a {
       weight: bold;
       style: italic;
     }
-    color: $colorInversion;
+    color: $colorWhite;
   }
 }
 .bl_humburgerBtn {
@@ -163,7 +163,7 @@ a {
     left: 0;
     height: 3px;
     width: 30px;
-    background: $colorInversion;
+    background: $colorWhite;
     &__top {
       transform: translate(0px, -10px);
       transition: 0.3s;
@@ -235,7 +235,7 @@ a {
       }
       text-align: center;
     }
-    color: $colorInversion;
+    color: $colorWhite;
     margin: 0;
   }
   &_sub {
@@ -243,7 +243,7 @@ a {
       size: 4rem;
       weight: bold;
     }
-    color: $colorInversion;
+    color: $colorWhite;
     margin: 0;
     transform: translateX(1em);
     @include mq {
@@ -400,7 +400,7 @@ a {
     font: {
       size: 1.6rem;
     }
-    background-color: $colorInversion;
+    background-color: $colorWhite;
     margin: 0;
     padding: 8%;
   }
@@ -452,7 +452,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $colorInversion;
+    color: $colorWhite;
     font: {
       size: 4rem;
       weight: bold;
@@ -467,7 +467,7 @@ a {
     weight: bold;
   }
   text-align: center;
-  color: $colorInversion;
+  color: $colorWhite;
   margin: 0;
 }
 .el_btnWrapper {
@@ -483,7 +483,7 @@ a {
     size: 1.6rem;
     weight: bold;
   }
-  color: $colorDefault;
+  color: $colorBlack;
   background-color: $colorBtnDefault;
   text-align: center;
   line-height: 60px;
@@ -517,7 +517,7 @@ a {
   margin-bottom: 80px !important;
 }
 .hp_white {
-  color: $colorInversion !important;
+  color: $colorWhite !important;
 }
 .hp_bgWhite {
   color: rgb(255 255 255 / 5%) !important;
