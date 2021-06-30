@@ -384,6 +384,16 @@ a {
   list-style: none;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .bl_bannerUnit li {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bl_bannerUnit li:last-of-type {
+    margin-bottom: 0;
+  }
+}
 .bl_bannerUnit__fullWidth {
   width: 100vw;
   margin-right: calc(50% - 50vw);

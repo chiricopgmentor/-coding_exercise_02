@@ -370,6 +370,18 @@ a {
   li {
     list-style: none;
     width: 100%;
+    @include mq {
+      margin: {
+        bottom: 30px;
+      }
+    }
+  }
+  @include mq {
+    li:last-of-type {
+      margin: {
+        bottom: 0;
+      }
+    }
   }
   &__fullWidth {
     width: 100vw;
