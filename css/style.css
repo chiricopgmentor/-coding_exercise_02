@@ -135,12 +135,10 @@ a {
   position: fixed;
   top: 33px;
   right: 15px;
-  display: block;
   height: 30px;
   width: 30px;
   border-style: none;
   background: none;
-  padding: 0;
 }
 .bl_humburgerBtn_bar {
   position: absolute;
