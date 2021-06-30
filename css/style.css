@@ -243,8 +243,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .el_sectionTitle__rightDash::after {
-    width: 4em;
-    height: 0.2em;
+    height: 0.15em;
     margin-left: 1.5em;
   }
 }
@@ -288,6 +287,7 @@ a {
 @media screen and (max-width: 768px) {
   .bl_media_text {
     width: 100%;
+    margin: 0;
   }
 }
 .bl_media_img {
@@ -310,6 +310,8 @@ a {
 @media screen and (max-width: 768px) {
   .el_bgText {
     font-size: 4rem;
+    margin-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -488,5 +490,17 @@ a {
 @media screen and (max-width: 768px) {
   .hp_mb50__md {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hp_mb30__md {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hp_pb64__md {
+    padding-bottom: 64px !important;
   }
 }/*# sourceMappingURL=style.css.map */
