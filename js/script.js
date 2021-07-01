@@ -15,7 +15,9 @@ function responsiveClassJustify() {
     $headerNav.addClass(is_menuClose);
   }
 }
+// 初期表示時と画面リサイズ時に実行する
 responsiveClassJustify();
+$window.resize(responsiveClassJustify());
 
 // 背景カルーセル
 $(".bl_bgiCarousel").slick({
@@ -38,15 +40,10 @@ $window.scroll(function () {
   }
 });
 
-// 画面リサイズイベント
-$window.resize(function () {
-  responsiveClassJustify();
-});
-
 // ハンバーガーボタンクリックイベント
 $('.bl_humburgerBtn').click(function () {
   $('.bl_humburgerBtn').toggleClass('bl_humburgerBtn__cross');
-  // $('.header_nav').toggleClass('header_nav--menu_open');
+  $('.bl_headerNav').toggleClass('bl_headerNav__close');
   // $('body').toggleClass('noscroll');
 });
 
