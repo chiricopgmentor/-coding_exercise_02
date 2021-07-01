@@ -1,15 +1,22 @@
 const breakpoint = 768;
 $window = $(window);
-const $header = $(".ly_header");
-const $headerNav = $(".bl_headerNav");
-const is_sticky = "ly_header__sticky";
-const is_menuClose = "bl_headerNav__close";
+const $body = $('body')
+const $header = $('.ly_header');
+const $headerNav = $('.bl_headerNav');
+const $humburgerBtn = $('.bl_humburgerBtn');
+const $bgiCarousel = $('.bl_bgiCarousel');
+const is_sticky = 'ly_header__sticky';
+const is_btn_cross = 'bl_humburgerBtn__cross';
+const is_menuClose = 'bl_headerNav__close';
+const is_menuOpen = 'bl_headerNav__spMenuOpen';
+const is_noscroll = 'is_noScroll';
 
 // 画面サイズに応じたクラス付け替え
 function responsiveClassJustify() {
   const window_width = $window.width();
   if (window_width >= breakpoint) {
     $headerNav.removeClass(is_menuClose);
+    $body.removeClass(is_noscroll);
   } else {
     $header.removeClass(is_sticky);
     $headerNav.addClass(is_menuClose);
@@ -20,7 +27,7 @@ responsiveClassJustify();
 $window.resize(responsiveClassJustify());
 
 // 背景カルーセル
-$(".bl_bgiCarousel").slick({
+$bgiCarousel.slick({
   autoplay: true,
   arrows: false,
 });
@@ -41,10 +48,11 @@ $window.scroll(function () {
 });
 
 // ハンバーガーボタンクリックイベント
-$('.bl_humburgerBtn').click(function () {
-  $('.bl_humburgerBtn').toggleClass('bl_humburgerBtn__cross');
-  $('.bl_headerNav').toggleClass('bl_headerNav__close');
-  // $('body').toggleClass('noscroll');
+$humburgerBtn.click(function () {
+  $humburgerBtn.toggleClass(is_btn_cross);
+  $headerNav.toggleClass(is_menuClose);
+  $headerNav.toggleClass(is_menuOpen);
+  $body.toggleClass(is_noscroll);
 });
 
 // サイトメニュークリックイベント
