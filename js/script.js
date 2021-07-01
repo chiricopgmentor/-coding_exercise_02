@@ -5,6 +5,18 @@ const $headerNav = $(".bl_headerNav");
 const is_sticky = "ly_header__sticky";
 const is_menuClose = "bl_headerNav__close";
 
+// 画面サイズに応じたクラス付け替え
+function responsiveClassJustify() {
+  const window_width = $window.width();
+  if (window_width >= breakpoint) {
+    $headerNav.removeClass(is_menuClose);
+  } else {
+    $header.removeClass(is_sticky);
+    $headerNav.addClass(is_menuClose);
+  }
+}
+responsiveClassJustify();
+
 // 背景カルーセル
 $(".bl_bgiCarousel").slick({
   autoplay: true,
@@ -28,13 +40,7 @@ $window.scroll(function () {
 
 // 画面リサイズイベント
 $window.resize(function () {
-  const window_width = $window.width();
-  if (window_width >= breakpoint) {
-    $headerNav.removeClass(is_menuClose);
-  } else {
-    $header.removeClass(is_sticky);
-    $headerNav.addClass(is_menuClose);
-  }
+  responsiveClassJustify();
 });
 
 // ハンバーガーボタンクリックイベント
