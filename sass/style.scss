@@ -278,7 +278,7 @@ a {
     align-items: center;
     &::after {
       content: "";
-      display: inline-block;
+      // display: inline-block;
       background: currentColor;
       width: 3.33em;
       height: 0.05em;
@@ -355,6 +355,9 @@ a {
     padding: {
       bottom: 40px;
     }
+  }
+  &_wrapper {
+    display: flex;
   }
 }
 .bl_cardUnit {
@@ -519,8 +522,7 @@ a {
   color: rgb(255 255 255 / 5%) !important;
 }
 .hp_right {
-  margin-left: auto !important;
-  text-align: right !important;
+  justify-content: flex-end !important;
 }
 .pc_only {
   @include mq {

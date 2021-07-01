@@ -289,7 +289,6 @@ a {
 }
 .el_sectionTitle__rightDash::after {
   content: "";
-  display: inline-block;
   background: currentColor;
   width: 3.33em;
   height: 0.05em;
@@ -367,6 +366,12 @@ a {
     margin-top: 40px;
     padding-bottom: 40px;
   }
+}
+.el_bgText_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .bl_cardUnit {
@@ -552,8 +557,10 @@ a {
 }
 
 .hp_right {
-  margin-left: auto !important;
-  text-align: right !important;
+  -webkit-box-pack: end !important;
+  -webkit-justify-content: flex-end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
 }
 
 @media screen and (max-width: 768px) {
