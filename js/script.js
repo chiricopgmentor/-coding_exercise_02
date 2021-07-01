@@ -1,7 +1,9 @@
 const breakpoint = 768;
 $window = $(window);
 const $header = $(".ly_header");
+const $headerNav = $(".bl_headerNav");
 const is_sticky = "ly_header__sticky";
+const is_menuClose = "bl_headerNav__close";
 
 // 背景カルーセル
 $(".bl_bgiCarousel").slick({
@@ -28,9 +30,10 @@ $window.scroll(function () {
 $window.resize(function () {
   const window_width = $window.width();
   if (window_width >= breakpoint) {
-    ;
+    $headerNav.removeClass(is_menuClose);
   } else {
     $header.removeClass(is_sticky);
+    $headerNav.addClass(is_menuClose);
   }
 });
 

@@ -130,6 +130,9 @@ a {
   font-style: italic;
   color: #ffffff;
 }
+.bl_headerNav__close {
+  display: none;
+}
 
 .bl_humburgerBtn {
   position: fixed;

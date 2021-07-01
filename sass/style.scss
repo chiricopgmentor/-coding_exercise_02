@@ -149,6 +149,9 @@ a {
     }
     color: $colorWhite;
   }
+  &__close {
+    display: none;
+  }
 }
 .bl_humburgerBtn {
   position: fixed;
