@@ -105,11 +105,6 @@ a {
       left: auto;
     }
   }
-  &__sticky {
-    position: fixed;
-    background: rgb(40 47 53 / 80%);
-    transition: 0.3s;
-  }
 }
 .ly_footer {
   height: $heightFooter;
@@ -149,34 +144,6 @@ a {
     }
     color: $colorWhite;
   }
-  &__close {
-    display: none;
-  }
-  &__spMenuOpen {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background: rgb(40 47 53 / 80%);
-    ul {
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      li {
-        margin: {
-          bottom: 30px;
-        }
-        &:last-of-type {
-          margin: {
-            bottom: 0;
-          }
-        }
-      }
-    }
-  }
 }
 .bl_humburgerBtn {
   position: fixed;
@@ -203,20 +170,6 @@ a {
     }
     &__btm {
       transform: translate(0px, 10px);
-      transition: 0.3s;
-    }
-  }
-  &__cross {
-    .bl_humburgerBtn_bar__top {
-      transform: rotate(0.125turn);
-      transition: 0.3s;
-    }
-    .bl_humburgerBtn_bar__mid {
-      opacity: 0;
-      transition: 0.3s;
-    }
-    .bl_humburgerBtn_bar__btm {
-      transform: rotate(-0.125turn);
       transition: 0.3s;
     }
   }
@@ -581,6 +534,53 @@ a {
 // ================================================================
 // Program
 // ================================================================
-.is_noScroll {
-  overflow: hidden !important;
+.js_body.is_noScroll {
+  overflow: hidden;
+}
+.js_header.is_sticky {
+  position: fixed;
+  background: rgb(40 47 53 / 80%);
+  transition: 0.3s;
+}
+.js_headerNav.is_close {
+  display: none;
+}
+.js_headerNav.is_spMenuOpen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgb(40 47 53 / 80%);
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    li {
+      margin: {
+        bottom: 30px;
+      }
+      &:last-of-type {
+        margin: {
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+.js_humburgerBtn.is_cross {
+  .js_humburgerBtn_bar__top {
+    transform: rotate(0.125turn);
+    transition: 0.3s;
+  }
+  .js_humburgerBtn_bar__mid {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .js_humburgerBtn_bar__btm {
+    transform: rotate(-0.125turn);
+    transition: 0.3s;
+  }
 }
