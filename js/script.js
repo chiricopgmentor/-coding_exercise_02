@@ -15,7 +15,7 @@ $window = $(window);
 // 画面サイズに応じたクラス付け替え
 function responsiveClassJustify() {
   const window_width = $window.width();
-  if (window_width >= breakpoint) {
+  if (window_width > breakpoint) {
     $headerNav.removeClass(is_close);
     $headerNav.removeClass(is_open);
     $body.removeClass(is_noscroll);
@@ -42,7 +42,7 @@ $bgiCarousel.slick({
 // スクロールイベント
 $window.scroll(function () {
   const window_width = $window.width();
-  if (window_width >= breakpoint) {
+  if (window_width > breakpoint) {
     const window_scroll = $(this).scrollTop();
     const window_height = $window.height();
     if (window_scroll > window_height) {
