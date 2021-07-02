@@ -1,30 +1,36 @@
 const breakpoint = 768;
+const $body = $(".js_body");
+const $header = $(".js_header");
+const $headerNav = $(".js_headerNav");
+const $humburgerBtn = $(".js_humburgerBtn");
+const $bgiCarousel = $(".js_bgiCarousel");
+const is_sticky = "is_sticky";
+const is_cross = "is_cross";
+const is_close = "is_close";
+const is_open = "is_spMenuOpen";
+const is_noscroll = "is_noScroll";
 $window = $(window);
-const $body = $('.js_body')
-const $header = $('.js_header');
-const $headerNav = $('.js_headerNav');
-const $humburgerBtn = $('.js_humburgerBtn');
-const $bgiCarousel = $('.js_bgiCarousel');
-const is_sticky = 'is_sticky';
-const is_cross = 'is_cross';
-const is_close = 'is_close';
-const is_open = 'is_spMenuOpen';
-const is_noscroll = 'is_noScroll';
 
 // 画面サイズに応じたクラス付け替え
 function responsiveClassJustify() {
   const window_width = $window.width();
   if (window_width >= breakpoint) {
     $headerNav.removeClass(is_close);
+    $headerNav.removeClass(is_open);
     $body.removeClass(is_noscroll);
+    $humburgerBtn.removeClass(is_cross);
   } else {
     $header.removeClass(is_sticky);
-    $headerNav.addClass(is_close);
+    if (!$humburgerBtn.hasClass(is_cross)) {
+      $headerNav.addClass(is_close);
+    }
   }
 }
 // 初期表示時と画面リサイズ時に実行する
 responsiveClassJustify();
-$window.resize(responsiveClassJustify());
+$window.resize(function () {
+  responsiveClassJustify();
+});
 
 // 背景カルーセル
 $bgiCarousel.slick({
