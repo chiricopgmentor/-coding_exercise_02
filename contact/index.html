@@ -71,24 +71,116 @@
     <main>
       <article>
         <section class="ly_section" id="contact">
-          <div class="ly_section_inner ly_section_inner__bgi" style="background-image: url(../img/contact-bgi@2x.jpg)">
+          <div
+            class="ly_section_inner ly_section_inner__bgi"
+            style="background-image: url(../img/contact-bgi@2x.jpg)"
+          >
             <div class="ly_pageWrapper__outer">
-              <div class="el_sectionTitle_wrapper el_sectionTitle_wrapper__vCenter hp_center">
+              <div
+                class="
+                  el_sectionTitle_wrapper el_sectionTitle_wrapper__vCenter
+                  hp_center
+                "
+              >
                 <h2 class="el_sectionTitle hp_white">Contact</h2>
               </div>
               <!-- /.el_sectionTitle_wrapper -->
               <div class="el_bgText_wrapper">
-                <p class="el_bgText hp_bgWhite  hp_mt280 hp_pb40">Contact us</p>
+                <p class="el_bgText hp_bgWhite hp_mt280 hp_pb40">Contact us</p>
               </div>
               <!-- /.el_bgText_wrapper -->
             </div>
             <!-- /.ly_pageWrapper__outer -->
           </div>
           <!-- /.ly_section_inner -->
-          <div class="el_btnWrapper">
-            <a href="#!" class="el_btn"> Submit </a>
+          <div class="bl_contactForm_wrapper">
+            <form class="bl_contactForm" action="#!" name="bl_contactForm">
+              <label class="bl_contactForm_label">お問い合わせ内容</label>
+              <div class="bl_contactForm_chkbox__wrapper">
+                <input
+                  class="bl_contactForm_chkbox"
+                  type="checkbox"
+                  name="bl_contactForm_chkbox"
+                  value="資料請求"
+                  id="bl_contactForm_chkbox__docReq"
+                />
+                <label
+                  class="bl_contactForm_label"
+                  for="bl_contactForm_chkbox__docReq"
+                  >資料請求</label
+                >
+                <input
+                  class="bl_contactForm_chkbox"
+                  type="checkbox"
+                  name="bl_contactForm_chkbox"
+                  value="お電話でのご相談を希望"
+                  id="bl_contactForm_chkbox__telConsul"
+                />
+                <label
+                  class="bl_contactForm_label"
+                  for="bl_contactForm_chkbox__telConsul"
+                  >お電話でのご相談を希望</label
+                >
+                <input
+                  class="bl_contactForm_chkbox"
+                  type="checkbox"
+                  name="bl_contactForm_chkbox"
+                  value="申し込み"
+                  id="bl_contactForm_chkbox__application"
+                />
+                <label
+                  class="bl_contactForm_label"
+                  for="bl_contactForm_chkbox__application"
+                >
+                  申し込み
+                </label>
+              </div>
+              <!-- /.bl_contactForm_chkbox__wrapper -->
+              <label class="bl_contactForm_label" for="bl_contactForm_name"
+                >担当者名</label
+              >
+              <input
+                class="bl_contactForm_inputBox"
+                type="text"
+                name="bl_contactForm_name"
+                placeholder="名字　名前"
+              />
+              <label class="bl_contactForm_label" for="bl_contactForm_tel"
+                >電話番号</label
+              >
+              <input
+                class="bl_contactForm_inputBox"
+                type="tel"
+                name="bl_contactForm_tel"
+                placeholder="+80 1234 5678"
+              />
+              <label class="bl_contactForm_label" for="bl_contactForm_mail"
+                >メールアドレス</label
+              >
+              <input
+                class="bl_contactForm_inputBox"
+                type="email"
+                name="bl_contactForm_mail"
+                placeholder="sample@gmail.com"
+              />
+              <label class="bl_contactForm_label" for="bl_contactForm_other"
+                >その他</label
+              >
+              <textarea
+                class="bl_contactForm_inputArea"
+                name="bl_contactForm_other"
+                id="bl_contactForm_other"
+                cols="30"
+                rows="10"
+                placeholder="お気軽にご記入ください。"
+              ></textarea>
+              <div class="el_btnWrapper">
+                <input class="el_btn" type="submit" value="Submit" />
+              </div>
+              <!-- /.el_btnWrapper -->
+            </form>
           </div>
-          <!-- /.el_btnWrapper -->
+          <!-- /.bl_contactForm_wrapper -->
         </section>
         <!-- /#contact -->
       </article>

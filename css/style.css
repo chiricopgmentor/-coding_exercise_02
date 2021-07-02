@@ -524,6 +524,38 @@ a {
   font-weight: bold;
 }
 
+.bl_contactForm {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.bl_contactForm_wrapper {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 97px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto;
+}
+.bl_contactForm_label {
+  font-size: 1.6rem;
+}
+.bl_contactForm_chkbox__wrapper {
+  margin-bottom: 22px;
+}
+.bl_contactForm_inputBox {
+  margin-bottom: 22px;
+}
+.bl_contactForm_inputArea {
+  margin-bottom: 80px;
+}
+
 .hp_mt280 {
   margin-top: 280px !important;
 }

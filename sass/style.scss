@@ -496,6 +496,40 @@ a {
     weight: bold;
   }
 }
+.bl_contactForm {
+  display: flex;
+  flex-direction: column;
+  &_wrapper {
+    max-width: 700px;
+    width: 100%;
+    margin: {
+      top: 97px;
+      right: auto;
+      bottom: 80px;
+      left: auto;
+    }
+  }
+  &_label {
+    font-size: 1.6rem;
+  }
+  &_chkbox {
+    &__wrapper {
+      margin: {
+        bottom: 22px;
+      }
+    }
+  }
+  &_inputBox {
+    margin: {
+      bottom: 22px;
+    }
+  }
+  &_inputArea {
+    margin: {
+      bottom: 80px;
+    }
+  }
+}
 // ================================================================
 // helper
 // ================================================================
