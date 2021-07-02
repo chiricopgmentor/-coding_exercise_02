@@ -50,6 +50,14 @@ a {
 // layout
 // ================================================================
 .ly_section {
+  &_inner {
+    &__bgi {
+      background: {
+        size: cover;
+        position: center;
+      }
+    }
+  }
   &__bgi {
     background: {
       size: cover;
@@ -61,6 +69,7 @@ a {
   &__outer {
     width: 100%;
     max-width: $widthLimitOuter;
+    position: relative;
     padding: {
       right: $widthBezel;
       left: $widthBezel;
@@ -254,6 +263,12 @@ a {
   }
   &_wrapper {
     display: flex;
+    &__vCenter {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+    }
   }
   &__rightDash {
     display: inline-flex;
@@ -484,6 +499,9 @@ a {
 // ================================================================
 // helper
 // ================================================================
+.hp_mt280 {
+  margin-top: 280px !important;
+}
 .hp_mb25 {
   margin-bottom: 25px !important;
 }
@@ -495,6 +513,9 @@ a {
 }
 .hp_mb80 {
   margin-bottom: 80px !important;
+}
+.hp_pb40 {
+  padding-bottom: 40px !important;
 }
 .hp_white {
   color: $colorWhite !important;
