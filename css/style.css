@@ -541,6 +541,13 @@ a {
           justify-content: flex-end !important;
 }
 
+.hp_center {
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
 @media screen and (max-width: 768px) {
   .pc_only {
     display: none !important;

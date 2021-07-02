@@ -505,6 +505,9 @@ a {
 .hp_right {
   justify-content: flex-end !important;
 }
+.hp_center {
+  justify-content: center !important;
+}
 .pc_only {
   @include mq {
     display: none !important;
