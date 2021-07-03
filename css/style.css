@@ -518,7 +518,12 @@ a {
   transition: 0.3s;
 }
 .el_btn:hover, .el_btn:focus {
-  opacity: 0.8;
+  letter-spacing: 0.3em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.el_btn:active {
+  color: #ffffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

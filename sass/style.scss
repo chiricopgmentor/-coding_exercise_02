@@ -489,7 +489,11 @@ a {
   transition: 0.3s;
   &:hover,
   &:focus {
-    opacity: 0.8;
+    letter-spacing: .3em;
+    transition: 0.3s;
+  }
+  &:active {
+    color: $colorWhite;
     transition: 0.3s;
   }
   &__submit {
