@@ -510,6 +510,8 @@ a {
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
+  -webkit-box-shadow: 0 0 8px;
+          box-shadow: 0 0 8px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -517,6 +519,10 @@ a {
   opacity: 0.8;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.el_btn__submit {
+  border-style: none;
+  cursor: pointer;
 }
 
 .el_creditTxt {
@@ -546,14 +552,25 @@ a {
 .bl_contactForm_label {
   font-size: 1.6rem;
 }
+.bl_contactForm_chkbox {
+  margin-left: 20px;
+}
+.bl_contactForm_chkbox:first-of-type {
+  margin-left: 0;
+}
 .bl_contactForm_chkbox__wrapper {
   margin-bottom: 22px;
 }
 .bl_contactForm_inputBox {
+  height: 30px;
+  font-size: 1.6rem;
   margin-bottom: 22px;
 }
 .bl_contactForm_inputArea {
+  height: 170px;
+  font-size: 1.6rem;
   margin-bottom: 80px;
+  padding: 5px;
 }
 
 .hp_mt280 {

@@ -483,11 +483,18 @@ a {
   text-align: center;
   line-height: 60px;
   border-radius: 30px;
+  box-shadow: 0 0 8px;
   transition: 0.3s;
   &:hover,
   &:focus {
     opacity: 0.8;
     transition: 0.3s;
+  }
+  &__submit {
+    border: {
+      style: none;
+    }
+    cursor: pointer;
   }
 }
 .el_creditTxt {
@@ -513,6 +520,14 @@ a {
     font-size: 1.6rem;
   }
   &_chkbox {
+    margin: {
+      left: 20px;
+    }
+    &:first-of-type {
+      margin: {
+        left: 0;
+      }
+    }
     &__wrapper {
       margin: {
         bottom: 22px;
@@ -520,14 +535,23 @@ a {
     }
   }
   &_inputBox {
+    height: 30px;
+    font: {
+      size: 1.6rem;
+    }
     margin: {
       bottom: 22px;
     }
   }
   &_inputArea {
+    height: 170px;
+    font: {
+      size: 1.6rem;
+    }
     margin: {
       bottom: 80px;
     }
+    padding: 5px;
   }
 }
 // ================================================================
