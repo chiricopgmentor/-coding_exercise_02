@@ -86,7 +86,9 @@
               </div>
               <!-- /.el_sectionTitle_wrapper -->
               <div class="el_bgText_wrapper">
-                <p class="el_bgText hp_bgWhite hp_mt280 hp_pb40">Contact us</p>
+                <p class="el_bgText hp_bgWhite hp_mt280 hp_pb40 hp_mt256__sp">
+                  Contact us
+                </p>
               </div>
               <!-- /.el_bgText_wrapper -->
             </div>
@@ -96,46 +98,55 @@
           <div class="bl_contactForm_wrapper">
             <form class="bl_contactForm" action="#!" name="bl_contactForm">
               <label class="bl_contactForm_label">お問い合わせ内容</label>
-              <div class="bl_contactForm_chkbox__wrapper">
-                <input
-                  class="bl_contactForm_chkbox"
-                  type="checkbox"
-                  name="bl_contactForm_chkbox"
-                  value="資料請求"
-                  id="bl_contactForm_chkbox__docReq"
-                />
-                <label
-                  class="bl_contactForm_label"
-                  for="bl_contactForm_chkbox__docReq"
-                  >資料請求</label
-                >
-                <input
-                  class="bl_contactForm_chkbox"
-                  type="checkbox"
-                  name="bl_contactForm_chkbox"
-                  value="お電話でのご相談を希望"
-                  id="bl_contactForm_chkbox__telConsul"
-                />
-                <label
-                  class="bl_contactForm_label"
-                  for="bl_contactForm_chkbox__telConsul"
-                  >お電話でのご相談を希望</label
-                >
-                <input
-                  class="bl_contactForm_chkbox"
-                  type="checkbox"
-                  name="bl_contactForm_chkbox"
-                  value="申し込み"
-                  id="bl_contactForm_chkbox__application"
-                />
-                <label
-                  class="bl_contactForm_label"
-                  for="bl_contactForm_chkbox__application"
-                >
-                  申し込み
-                </label>
+              <div class="bl_contactForm_chkboxUnit">
+                <div class="bl_contactForm_chkbox_wrapper">
+                  <input
+                    class="bl_contactForm_chkbox"
+                    type="checkbox"
+                    name="bl_contactForm_chkbox"
+                    value="資料請求"
+                    id="bl_contactForm_chkbox__docReq"
+                  />
+                  <label
+                    class="bl_contactForm_label"
+                    for="bl_contactForm_chkbox__docReq"
+                    >資料請求</label
+                  >
+                </div>
+                <!-- /.bl_contactForm_chkbox_wrapper -->
+                <div class="bl_contactForm_chkbox_wrapper">
+                  <input
+                    class="bl_contactForm_chkbox"
+                    type="checkbox"
+                    name="bl_contactForm_chkbox"
+                    value="お電話でのご相談を希望"
+                    id="bl_contactForm_chkbox__telConsul"
+                  />
+                  <label
+                    class="bl_contactForm_label"
+                    for="bl_contactForm_chkbox__telConsul"
+                    >お電話でのご相談を希望</label
+                  >
+                </div>
+                <!-- /.bl_contactForm_chkbox_wrapper -->
+                <div class="bl_contactForm_chkbox_wrapper">
+                  <input
+                    class="bl_contactForm_chkbox"
+                    type="checkbox"
+                    name="bl_contactForm_chkbox"
+                    value="申し込み"
+                    id="bl_contactForm_chkbox__application"
+                  />
+                  <label
+                    class="bl_contactForm_label"
+                    for="bl_contactForm_chkbox__application"
+                  >
+                    申し込み
+                  </label>
+                </div>
+                <!-- /.bl_contactForm_chkbox_wrapper -->
               </div>
-              <!-- /.bl_contactForm_chkbox__wrapper -->
+              <!-- /.bl_contactForm_chkboxUnit -->
               <label class="bl_contactForm_label" for="bl_contactForm_name"
                 >担当者名</label
               >
@@ -171,7 +182,11 @@
                 rows="10"
               ></textarea>
               <div class="el_btnWrapper">
-                <input class="el_btn el_btn__submit" type="submit" value="Submit" />
+                <input
+                  class="el_btn el_btn__submit"
+                  type="submit"
+                  value="Submit"
+                />
               </div>
               <!-- /.el_btnWrapper -->
             </form>
