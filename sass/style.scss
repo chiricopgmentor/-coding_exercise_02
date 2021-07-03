@@ -265,6 +265,8 @@ a {
     display: flex;
     &__vCenter {
       position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
       width: 100%;
       align-items: center;
@@ -528,11 +530,29 @@ a {
         left: 0;
       }
     }
-    &__wrapper {
+    @include mq {
+      margin: {
+        left: 0;
+      }
+    }
+    &Unit {
       margin: {
         bottom: 22px;
       }
+      @include mq {
+        display: flex;
+        flex-direction: column;
+      }
     }
+    // &__wrapper {
+    //   margin: {
+    //     bottom: 22px;
+    //   }
+    //   @include mq {
+    //     display: flex;
+    //     flex-direction: column;
+    //   }
+    // }
   }
   &_inputBox {
     height: 30px;
@@ -596,6 +616,11 @@ a {
   display: none !important;
   @include mq {
     display: block !important;
+  }
+}
+.hp_mt256__sp {
+  @include mq {
+    margin-top: 256px !important;
   }
 }
 .hp_mb50__sp {
