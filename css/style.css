@@ -553,12 +553,10 @@ a {
 }
 .bl_contactForm_label {
   font-size: 1.6rem;
+  margin-bottom: 5px;
 }
 .bl_contactForm_chkbox {
-  margin-left: 20px;
-}
-.bl_contactForm_chkbox:first-of-type {
-  margin-left: 0;
+  margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
   .bl_contactForm_chkbox {
@@ -566,19 +564,30 @@ a {
   }
 }
 .bl_contactForm_chkboxUnit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 22px;
 }
 @media screen and (max-width: 768px) {
   .bl_contactForm_chkboxUnit {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+.bl_contactForm_chkboxUnit *:first-child {
+  margin-left: 0px;
+}
+.bl_contactForm_chkbox_wrapper {
+  margin-left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .bl_contactForm_chkbox_wrapper {
+    margin-left: 0;
   }
 }
 .bl_contactForm_inputBox {
@@ -661,14 +670,20 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .hp_mb50__sp {
-    margin-bottom: 50px !important;
+  .hp_mb13__sp {
+    margin-bottom: 13px !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hp_mb30__sp {
     margin-bottom: 30px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hp_mb50__sp {
+    margin-bottom: 50px !important;
   }
 }
 
