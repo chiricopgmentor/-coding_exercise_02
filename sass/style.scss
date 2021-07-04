@@ -24,6 +24,10 @@ $breakpoint: 768px;
     @content;
   }
 }
+@mixin fontFamily {
+  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif JP", serif;
+}
 // ================================================================
 // Media Query Value
 // ================================================================
@@ -39,8 +43,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Noto Serif", serif;
-  font-family: "Noto Serif JP", serif;
+  // font-family: "Noto Serif", serif;
+  // font-family: "Noto Serif JP", serif;
+  @include fontFamily;
 }
 a {
   text-decoration: none;
@@ -497,7 +502,7 @@ a {
     transition: 0.3s;
   }
   &__submit {
-    font-family: "Noto Serif", serif;
+    @include fontFamily;
     border: {
       style: none;
     }
@@ -572,6 +577,7 @@ a {
     font: {
       size: 1.6rem;
     }
+    @include fontFamily;
     margin: {
       bottom: 22px;
     }
@@ -581,6 +587,7 @@ a {
     font: {
       size: 1.6rem;
     }
+    @include fontFamily;
     margin: {
       bottom: 80px;
     }

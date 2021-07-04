@@ -529,6 +529,7 @@ a {
 }
 .el_btn__submit {
   font-family: "Noto Serif", serif;
+  font-family: "Noto Serif JP", serif;
   border-style: none;
   cursor: pointer;
 }
@@ -603,11 +604,15 @@ a {
 .bl_contactForm_inputBox {
   height: 30px;
   font-size: 1.6rem;
+  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif JP", serif;
   margin-bottom: 22px;
 }
 .bl_contactForm_inputArea {
   height: 170px;
   font-size: 1.6rem;
+  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif JP", serif;
   margin-bottom: 80px;
   padding: 5px;
 }
