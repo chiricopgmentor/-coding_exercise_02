@@ -530,6 +530,7 @@ a {
     }
   }
   &_chkbox {
+    cursor: pointer;
     margin: {
       right: 10px;
     }
@@ -560,6 +561,9 @@ a {
         margin: {
           left: 0;
         }
+      }
+      .bl_contactForm_label {
+        cursor: pointer;
       }
     }
   }

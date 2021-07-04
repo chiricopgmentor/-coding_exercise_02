@@ -562,6 +562,7 @@ a {
   margin-bottom: 5px;
 }
 .bl_contactForm_chkbox {
+  cursor: pointer;
   margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
@@ -595,6 +596,9 @@ a {
   .bl_contactForm_chkbox_wrapper {
     margin-left: 0;
   }
+}
+.bl_contactForm_chkbox_wrapper .bl_contactForm_label {
+  cursor: pointer;
 }
 .bl_contactForm_inputBox {
   height: 30px;
