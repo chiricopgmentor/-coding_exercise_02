@@ -489,7 +489,7 @@ a {
   transition: 0.3s;
   &:hover,
   &:focus {
-    letter-spacing: .3em;
+    letter-spacing: 0.3em;
     transition: 0.3s;
   }
   &:active {
@@ -497,6 +497,7 @@ a {
     transition: 0.3s;
   }
   &__submit {
+    font-family: "Noto Serif", serif;
     border: {
       style: none;
     }
