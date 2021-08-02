@@ -430,13 +430,13 @@ a {
       }
     }
   }
-  &__fullWidth {
-    width: 100vw;
-    margin: {
-      right: calc(50% - 50vw);
-      left: calc(50% - 50vw);
-    }
-  }
+  // &__fullWidth {
+  //   width: 100vw;
+  //   margin: {
+  //     right: calc(50% - 50vw);
+  //     left: calc(50% - 50vw);
+  //   }
+  // }
 }
 .bl_banner {
   position: relative;
